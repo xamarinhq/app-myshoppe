@@ -1,13 +1,13 @@
 # My Shoppe - Connect with your consumers
 
-Cross-platform Xamarin.Forms sample application template enabling you to easily connect with your customers and manage your stores. All powered by [Xamarin](http://www.xamarin.com) and [Xamarin.Forms](http://www.xamarin.com/forms) with a powerful Azure Mobile Apps backend with 100% shared code across iOS, Android, and Windows Phone.
+My Shoppe is a cross-platform Xamarin.Forms pre-built application & template enabling you to easily connect with your customers and manage your shops. All powered by [Xamarin](http://www.xamarin.com), [Xamarin.Forms](http://www.xamarin.com/forms), and  a powerful Azure Mobile Apps backend with 100% shared C# code across iOS, Android, and Windows Phone.
 
-Open Source Project by [@JamesMontemagno](http://www.twitter.com/jamesmontemagno)
+This another Open Source Project by [@JamesMontemagno](http://www.twitter.com/jamesmontemagno)
 
 ![](art/myshoppepromo.png)
 
 ## Consumer Application
-The My Shoppe consumer application enables you as a shop owner to easily connect with your customer base. This highly themeable application enabled you to create a browesable list of shop locations so your consumers can find the closest location to them, call the shop, see shop hours, and even navigate to the shop with a single click.
+The My Shoppe consumer application enables you as a shop owner to easily connect with your consumer base. This application  enables you to create a browesable list of shop locations so your consumers can find the closest location to them, call the shop, see shop hours, and even navigate to the shop with a single click.
 
 ### Features
 * Browse Stores / Locations (with online/offline sync)
@@ -26,11 +26,12 @@ You can download the sample My Shoppe application for the following platforms:
 * **Windows Phone** available on [Windows Store](https://www.windowsphone.com/en-us/store/app/my-shoppe/8641ed20-1bf6-412d-ae28-a5f785cc6546)
 
 ## Admin Application
-In addition to the consumer application that you can release into the store I create a very simple Administration application that allows you to manager all your shops and feedback from customers. It uses the same backend from the consumer application and even shares some of the same UI and code. 
+In addition to the consumer application that you can release into the app stores, I created an Administration mobile application that allows you to manage all your shops and feedback from customers. It uses the same backend from the consumer application and even shares some of the same UI and code. 
 
 ### Features
 * Create and Manage your Shops
-* Browse & Manage Feedback from customers
+* Browse & Manage Feedback from consumers
+* Call back consumers with a single click
 
 ![](art/MyShoppeAdminHero.png)
 
