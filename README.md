@@ -51,8 +51,8 @@ MobileService = new MobileServiceClient(
 
 ```
 
-### (Xamarin Insights)[http://www.xamarin.com/insights] Integration
-Xamarin Insights provides a simple and effective way real time monitoring of your mobile apps for crashes and events. My Shoppe integrated Insights for both crash reporting and event tracking. Simply follow the (Xamarin Insights Documentation)[https://insights.xamarin.com/docs] to create an API Key for your application. Once you have that simply replace all instances of the demo key: 
+### [Xamarin Insights](http://www.xamarin.com/insights) Integration
+Xamarin Insights provides a simple and effective way real time monitoring of your mobile apps for crashes and events. My Shoppe integrated Insights for both crash reporting and event tracking. Simply follow the [Xamarin Insights Documentation](https://insights.xamarin.com/docs) to create an API Key for your application. Once you have that simply replace all instances of the demo key: 
 ```
 Insights.Initialize("c3d88c6f124fdabdf8880b65845094bb7bad90ac");
 ```
@@ -60,6 +60,8 @@ with
 ```
 Insights.Initialize("Your Key");
 ```
+
+These will be located in the MainActivity.cs, ApplicationDelegate.cs, and MainPage.xaml.cs.
 
 ### App Customization
 Easily adjust the shop's name, sorting, and of course customize My Shoppe to Your Shoppe with your own branding and styles.
