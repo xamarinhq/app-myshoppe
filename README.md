@@ -1,8 +1,8 @@
 # My Shoppe - Connect with your customers
 
-Cross-platform Xamarin.Forms sample application template enabling you to easily connect with your customers and manage your stores. All powered by ([Xamarin](http://www.xamarin.com)) and ([Xamarin.Forms](http://www.xamarin.com/forms)) with a powerful Azure Mobile Apps backend with 100% shared code across iOS, Android, and Windows Phone.
+Cross-platform Xamarin.Forms sample application template enabling you to easily connect with your customers and manage your stores. All powered by [Xamarin](http://www.xamarin.com) and [Xamarin.Forms](http://www.xamarin.com/forms) with a powerful Azure Mobile Apps backend with 100% shared code across iOS, Android, and Windows Phone.
 
-Open Source Project by ([@JamesMontemagno](http://www.twitter.com/jamesmontemagno)) 
+Open Source Project by [@JamesMontemagno](http://www.twitter.com/jamesmontemagno)
 
 ![](art/myshoppepromo.png)
 
