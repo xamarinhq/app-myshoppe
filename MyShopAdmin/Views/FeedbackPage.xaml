@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="MyShopAdmin.Views.FeedbackPage">
+	<ContentPage.Content>
+
+	<StackLayout>
+	<ScrollView VerticalOptions="FillAndExpand">
+	<Grid Padding="10,10,10,0" ColumnSpacing="20" RowSpacing="10" VerticalOptions="FillAndExpand">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+			<ColumnDefinition Width="*"/>
+		</Grid.ColumnDefinitions>
+
+		<Label
+			FontAttributes="Bold"
+			FontSize="Medium"
+			Text="Store:"
+			TextColor="#3498DB" />
+
+		<Label 
+			Text="{Binding StoreName}"
+			Grid.Row="0"
+			Grid.Column="1">
+        </Label>
+
+		<Label
+			Grid.Row="1"
+			FontAttributes="Bold"
+			FontSize="Medium"
+			Text="Service:"
+			TextColor="#3498DB" />
+
+		<Picker 
+			x:Name="PickerServiceType"
+			Grid.Row="1"
+			Grid.Column="1"
+			SelectedIndex="{Binding ServiceType}">
+      <Picker.Items>
+        <x:String>Xamarin Platform</x:String>
+        <x:String>Xamarin Test Cloud</x:String>
+        <x:String>Xamarin Insights</x:String>
+        <x:String>Xamarin.Forms</x:String>
+        <x:String>Xamarin Studio</x:String>
+        <x:String>Xamarin for Visual Studio</x:String>
+        <x:String>Other</x:String>
+      </Picker.Items>
+        </Picker>
+
+		<Label
+			Grid.Row="2"
+			FontAttributes="Bold"
+			FontSize="Medium"
+			Text="Date:"
+			TextColor="#3498DB"
+			VerticalOptions="Center" />
+
+		<DatePicker 
+			Grid.Row="2"
+			Grid.Column="1"
+			Date="{Binding Date}"/>
+
+		<Label
+			Grid.Row="3"
+			FontAttributes="Bold"
+			FontSize="Medium"
+			Text="Rating:"
+			TextColor="#3498DB"
+			VerticalOptions="Center"  />
+
+		<Picker
+			x:Name="PickerRating"
+			Grid.Row="3" 
+			Grid.Column="1"
+			SelectedIndex="{Binding Rating}">
+			 <Picker.Items>
+	            <x:String>0 - Not so great</x:String>
+	            <x:String>1</x:String> 
+	            <x:String>2</x:String>
+	            <x:String>3</x:String>
+	            <x:String>4</x:String>
+	            <x:String>5 - Average</x:String>
+	            <x:String>6</x:String> 
+	            <x:String>7</x:String>
+	            <x:String>8</x:String>
+	            <x:String>9</x:String>
+	            <x:String>10 - Amazing</x:String>
+	        </Picker.Items>
+        </Picker>
+
+
+
+
+		<Label
+			Grid.Row="4"
+			FontSize="Medium"
+			Text="Name:"
+			TextColor="#3498DB"
+			VerticalOptions="Center"  />
+
+		<Entry 
+			Grid.Row="4"
+			Grid.Column="1"
+			Text="{Binding Name}"
+			Placeholder="First and Last" 
+			Keyboard="Default"/>
+
+		<Label
+			Grid.Row="5"
+			FontSize="Medium"
+			Text="Phone:"
+			TextColor="#3498DB"
+			VerticalOptions="Center"  />
+
+		<Entry 
+			Grid.Row="5"
+			Grid.Column="1"
+			Text="{Binding PhoneNumber}" 
+			Placeholder="555-555-5555"
+			Keyboard="Telephone" />
+
+		<Switch 
+			Grid.Row="6"
+			IsToggled="{Binding RequiresCall}"/>
+
+		<Label
+			Grid.Row="6"
+			Grid.Column="1"
+			FontSize="Medium"
+			Text="Request Callback"
+			TextColor="#3498DB"
+			VerticalOptions="Center"  />
+
+		<Label
+			Grid.Row="7"
+			FontAttributes="Bold"
+			FontSize="Medium"
+			Text="Feedback:"
+			TextColor="#3498DB"
+			VerticalOptions="Center"  />
+
+		<Editor 
+			Grid.Row="8"
+			Grid.ColumnSpan="2"
+			MinimumHeightRequest="150"
+			Text="{Binding Text}"
+			BackgroundColor="#103498DB"
+			/>
+
+		
+	</Grid>
+
+	</ScrollView>
+	<Button 
+			x:Name="ButtonCall"
+			BackgroundColor="#3498DB"
+			BorderRadius="0"
+			TextColor="White" 
+			Text="Call"/>
+	</StackLayout>	
+	</ContentPage.Content>
+</ContentPage>

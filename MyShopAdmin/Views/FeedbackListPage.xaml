@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="MyShopAdmin.FeedbackListPage"
+    xmlns:local="clr-namespace:MyShopAdmin.Helpers;assembly=MyShopAdmin"
+	Title="{Binding Title}"
+	IsBusy="{Binding IsBusy}">
+	<ContentPage.Resources>
+	 	<ResourceDictionary>
+	 		<local:RatingConverter x:Key="RatingConverter" />
+	    </ResourceDictionary>
+	  </ContentPage.Resources>
+	<ContentPage.Content>
+	<StackLayout>
+			<ListView 
+				x:Name="FeedbackList"
+				ItemsSource="{Binding FeedbacksGrouped}"
+				IsGroupingEnabled="True"
+            	GroupDisplayBinding="{Binding Key}"
+        		IsPullToRefreshEnabled="true"
+        		HasUnevenRows="true"
+        		RefreshCommand="{Binding GetFeedbackCommand}"
+        		IsRefreshing="{Binding IsBusy, Mode=OneWay}">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+						<Grid Padding="10">
+						 	<Grid.ColumnDefinitions>
+							 	<ColumnDefinition Width="10"/>
+							 	<ColumnDefinition Width="Auto"/>
+							 	<ColumnDefinition Width="*"/>
+						 	</Grid.ColumnDefinitions>
+						 	<Grid.RowDefinitions>
+						 		<RowDefinition Height="Auto"/>
+						 		<RowDefinition Height="Auto"/>
+						 		<RowDefinition Height="Auto"/>
+						 		<RowDefinition Height="Auto"/>
+						 	</Grid.RowDefinitions>
+						 	<BoxView 
+						 		Grid.RowSpan="4"
+						 		BackgroundColor="{Binding Rating,
+						 			 Converter={StaticResource RatingConverter}}"/>
+
+						 		<Label 
+						 			Grid.Column="1"
+						 			Text="Visit Date" 
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+						 		<Label 
+						 			Grid.Column="1"
+						 			Grid.Row="1"
+						 			Text="Name" 
+					 				HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+						 		<Label 
+						 			Grid.Column="1"
+						 			Grid.Row="2"
+						 			Text="Needs Call?" 
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Center"/>
+
+					 			<Label 
+						 			Grid.Column="1"
+						 			Grid.Row="3"
+						 			Text="Feedback" 
+						 			HorizontalOptions="End"
+						 			VerticalOptions="Start"/>
+						 			   
+								<Label 
+						 			Grid.Column="2"
+						 			Grid.Row="0"
+									Text="{Binding VisitDateDisplay}" 
+				                	FontSize="Medium"
+				                	TextColor="#3498DB" 
+				                	LineBreakMode="NoWrap"
+						 			VerticalOptions="Center"/>
+
+				                <Label 
+							 		   Grid.Column="2"
+							 		   Grid.Row="1"
+				                	   Text="{Binding Name}" 
+				                	   LineBreakMode="NoWrap"
+						 			   VerticalOptions="Center"/>
+
+				                <Label
+						 				Grid.Column="2"
+						 			   Grid.Row="2" 
+				                	   IsVisible="{Binding RequiresCall}"
+				                	   VerticalOptions="Center"
+				                	   Text="YES"/>
+
+
+				                <Label 
+							 		   Grid.Column="2"
+							 		   Grid.Row="3"
+				                	   Text="{Binding Text}" 
+				                	   LineBreakMode="WordWrap"
+						 			   VerticalOptions="Center"/>
+						 	</Grid>
+				                
+							<ViewCell.ContextActions>
+	                     		<MenuItem Clicked="OnDelete"
+	           						Text="Close" IsDestructive="True" 
+	           						CommandParameter="{Binding .}"/>
+                     		</ViewCell.ContextActions>	
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			<StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="10" Padding="10" IsVisible="{Binding IsBusy}">
+				<ActivityIndicator  HorizontalOptions="Center"
+								   IsRunning="{Binding IsBusy}"
+								   IsVisible="{Binding IsBusy}"/>
+		    	<Label HorizontalOptions="Center"
+			    	 VerticalOptions="Center" 
+			    	 Text="Loading..."/>
+   			</StackLayout>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

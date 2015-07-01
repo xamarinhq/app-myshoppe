@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="MyShopAdmin.HomePage"
+	Title="{Binding Title}"
+	IsBusy="{Binding IsBusy}">
+	<ContentPage.Content>
+		<Grid RowSpacing="0" ColumnSpacing="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+      <Image
+        Grid.ColumnSpan="2"
+				Source="hero.jpg"
+        Aspect="AspectFill"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions ="FillAndExpand"/>
+			<Button 
+				x:Name="ButtonManage"
+				Grid.Row="1"
+				BackgroundColor="#3498DB"
+				BorderRadius="0"
+				TextColor="White" 
+				Text="Manage Locations"/>
+			<Button 
+				x:Name="ButtonFeedback"
+				Grid.Row="1"
+				Grid.Column="1"
+				BackgroundColor="#81C134" 
+				BorderRadius="0"
+				TextColor="White"
+				Text="View Feedback"/>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>

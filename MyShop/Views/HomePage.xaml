@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+	xmlns="http://xamarin.com/schemas/2014/forms" 
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+	x:Class="MyShop.HomePage"
+	Title="{Binding Title}"
+	IsBusy="{Binding IsBusy}">
+	<ContentPage.Content Padding="0">
+		<Grid RowSpacing="0" ColumnSpacing="0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+      <Image
+        Grid.ColumnSpan="2"
+				Source="hero.jpg"
+        Aspect="AspectFill"
+				HorizontalOptions="FillAndExpand"
+				VerticalOptions ="FillAndExpand"/>
+			<Button 
+				x:Name="ButtonFindStore"
+				Grid.Row="1"
+				BackgroundColor="#3498DB"
+				BorderRadius="0"
+				TextColor="White" 
+				Text="Locations"/>
+			<Button 
+				x:Name="ButtonLeaveFeedback"
+				Grid.Row="1"
+				Grid.Column="1"
+				BackgroundColor="#81C134" 
+				BorderRadius="0"
+				TextColor="White"
+				Text="Leave Feedback"/>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
