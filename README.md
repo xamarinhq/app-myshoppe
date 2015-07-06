@@ -40,6 +40,8 @@ In addition to the consumer application that you can release into the app stores
 ### Azure Mobile Apps
 My Shoppe leverages the brand new Azure App Service called [Azure Mobile Apps](http://azure.microsoft.com/en-us/services/app-service/mobile/) which is the next evolution of Azure Mobile Services. I have implemented the backend datastore with a simple interface, [IDataStore.cs](https://github.com/jamesmontemagno/MyShoppe/blob/master/MyShop/Interfaces/IDataStore.cs) that registers itself with the Xamarin.Forms Dependency Service. You could always create and implement your own XML or Json based service using this method.
 
+**If you just want to try out My Shoppe there is a default sample Azure backend in place, however I have removed all ability to add/update/delete stores. You can however leave feedback and moderate it from the admin app for fun. If you want to setup your own Azure Mobile app, simply follow the steps below**
+
 I have provided my existing .NET Backend for reference on how to create your controllers and data entities to publish to Azure. Read through the [Azure Mobile Apps tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-dotnet-backend-xamarin-android-get-started-preview/) to learn how to create and setup your own Mobile Apps backend for My Shoppe. 
 
 Once you have your backend setup you will want to enter your very own Azure Mobile Apps credentials in the [AzureDataStore.cs file on the following lines](https://github.com/jamesmontemagno/MyShoppe/blob/master/MyShop/Services/AzureDataStore.cs#L29-L32):
