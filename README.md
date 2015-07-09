@@ -22,7 +22,7 @@ The My Shoppe consumer application enables you as a shop owner to easily connect
 You can download the sample My Shoppe application for the following platforms:
 
 * **Android** available on [Google Play](https://play.google.com/store/apps/details?id=com.refractored.myshoppe)
-* **iPhone & iPad** available soon on App Store **Awaiting certification**
+* **iPhone & iPad** available on [App Store](https://itunes.apple.com/us/app/my-shoppe/id1014747999?ls=1&mt=8) 
 * **Windows Phone** available on [Windows Store](https://www.windowsphone.com/en-us/store/app/my-shoppe/8641ed20-1bf6-412d-ae28-a5f785cc6546)
 
 ## Admin Application
