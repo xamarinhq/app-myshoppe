@@ -126,7 +126,7 @@ namespace MyShop
 		}
 
 		int serviceType = 4;
-		int ServiceType
+		public int ServiceType
 		{
 			get { return serviceType; }
 			set {
@@ -135,7 +135,7 @@ namespace MyShop
 		}
 
 		int rating = 10;
-		int Rating
+		public int Rating
 		{
 			get { return rating; }
 			set {
@@ -144,7 +144,7 @@ namespace MyShop
 		}
 
 		DateTime date = DateTime.Today;
-		DateTime Date
+		public DateTime Date
 		{
 			get { return date; }
 			set {
