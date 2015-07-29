@@ -6,8 +6,9 @@
 	 x:Class="MyShop.StoresPage"
 	Title="{Binding Title}"
 	IsBusy="{Binding IsBusy}">
-	<ContentPage.Content>
-		<StackLayout>
+    <ContentPage.Content>
+        
+        <StackLayout>
 			<StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="10" Padding="10" IsVisible="{Binding IsBusy}">
 				<ActivityIndicator  HorizontalOptions="Center"
 								   IsRunning="{Binding IsBusy}"

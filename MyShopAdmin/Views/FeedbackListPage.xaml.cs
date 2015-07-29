@@ -13,13 +13,13 @@ namespace MyShopAdmin
 		{
 			InitializeComponent ();
 			BindingContext = viewModel = new FeedbackListViewModel (this);
-			FeedbackList.ItemSelected += (sender, e) => 
+			FeedbackList.ItemSelected += async (sender, e) => 
 			{
 				if(FeedbackList.SelectedItem == null)
 					return;
 
 
-				Navigation.PushAsync(new MyShopAdmin.Views.FeedbackPage(e.SelectedItem as Feedback));
+				await Navigation.PushAsync(new MyShopAdmin.Views.FeedbackPage(e.SelectedItem as Feedback));
 
 				FeedbackList.SelectedItem = null;
 			};
@@ -40,8 +40,10 @@ namespace MyShopAdmin
 			var mi = ((MenuItem)sender);
 
 			var result = await DisplayAlert ("Delete?", "Are you sure you want to remove this feedback?", "Yes", "No");
-			if(result)
-				await viewModel.DeleteFeedback(mi.CommandParameter as Feedback);
+            if (result)
+            {
+                await viewModel.DeleteFeedback(mi.CommandParameter as Feedback);
+            }
 		}
 	}
 }

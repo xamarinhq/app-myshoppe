@@ -40,6 +40,17 @@ namespace MyShop
 		{
 			get { return FeedbackDate.ToString("g"); }
 		}
-	}
+
+        public override string ToString()
+        {
+            return "Name: " + Name +
+                    "\n Store: " + StoreName +
+                    "\n Requires Call: " + RequiresCall.ToString() +
+                    "\n Visit Date: " + VisitDateDisplay +
+                    "\n Service Type: " + ServiceType +
+                    "\n Rating: " + Rating +
+                    "\n Text: " + Text;
+        }
+    }
 }
 

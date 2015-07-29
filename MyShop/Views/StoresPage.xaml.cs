@@ -7,8 +7,9 @@ namespace MyShop
 {
 	public partial class StoresPage : ContentPage
 	{
-		private StoresViewModel viewModel;
-		public StoresPage ()
+        StoresViewModel viewModel;
+        public Action<Store> ItemSelected { get; set; }
+        public StoresPage ()
 		{
 			InitializeComponent ();
 
@@ -16,19 +17,24 @@ namespace MyShop
 
 			BindingContext = viewModel = new StoresViewModel (this);
 
-			StoreList.ItemSelected += (sender, e) => 
+			StoreList.ItemSelected += async (sender, e) => 
 			{
 				if(StoreList.SelectedItem == null)
 					return;
 
+                var store = e.SelectedItem as Store;
+                if (ItemSelected == null)
+                {
+                    await Navigation.PushAsync(new StorePage(store));
+                    StoreList.SelectedItem = null;
+                }
+                else
+                {
+                    ItemSelected?.Invoke(store);
+                }
+            };
 
-				Navigation.PushAsync(new StorePage(e.SelectedItem as Store));
-
-
-				StoreList.SelectedItem = null;
-			};
-
-			if(Device.OS == TargetPlatform.WinPhone)
+			if(Device.OS == TargetPlatform.WinPhone || (Device.OS == TargetPlatform.Windows && Device.Idiom == TargetIdiom.Phone))
 			{
 				StoreList.IsGroupingEnabled = false;
 				StoreList.ItemsSource = viewModel.Stores;

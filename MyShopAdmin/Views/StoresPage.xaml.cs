@@ -14,18 +14,18 @@ namespace MyShopAdmin
 			InitializeComponent ();
 			BindingContext = viewModel = new StoresViewModel (this);
 			viewModel.ForceSync = true;
-			NewStore.Clicked += (sender, e) => 
+			NewStore.Clicked += async (sender, e) => 
 			{
-				Navigation.PushAsync(new StorePage(null));
+				await Navigation.PushAsync(new StorePage(null));
 			};
 
-			StoreList.ItemSelected += (sender, e) => 
+			StoreList.ItemSelected += async (sender, e) => 
 			{
 				if(StoreList.SelectedItem == null)
 					return;
 
 
-				Navigation.PushAsync(new StorePage(e.SelectedItem as Store));
+				await Navigation.PushAsync(new StorePage(e.SelectedItem as Store));
 
 
 				StoreList.SelectedItem = null;
@@ -36,8 +36,10 @@ namespace MyShopAdmin
 			var mi = ((MenuItem)sender);
 
 			var result = await DisplayAlert ("Delete?", "Are you sure you want to remove this store?", "Yes", "No");
-			if(result)
-				await viewModel.DeleteStore(mi.CommandParameter as Store);
+            if (result)
+            {
+                await viewModel.DeleteStore(mi.CommandParameter as Store);
+            }
 		}
 
 		protected override void OnAppearing ()

@@ -5,10 +5,9 @@
 	x:Class="MyShop.FeedbackPage"
 	Title="{Binding Title}"
 	IsBusy="{Binding IsBusy}">
-	<ContentPage.Content>
-
-	<StackLayout>
-	<StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" IsVisible="{Binding IsBusy}">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal" Padding="10" IsVisible="{Binding IsBusy}">
 		<ActivityIndicator  HorizontalOptions="Center"
 						   IsRunning="{Binding IsBusy}"
 						   IsVisible="{Binding IsBusy}"/>
@@ -17,8 +16,26 @@
 	    	 Text="{Binding Message}"/>
 	</StackLayout>
 	<ScrollView VerticalOptions="FillAndExpand">
-	<Grid Padding="10,10,10,0" ColumnSpacing="20" RowSpacing="10" VerticalOptions="FillAndExpand">
-		<Grid.RowDefinitions>
+	<Grid VerticalOptions="FillAndExpand">
+            <Grid.ColumnSpacing>
+                <OnIdiom x:TypeArguments="x:Double">
+                    <OnIdiom.Phone>20</OnIdiom.Phone>
+                    <OnIdiom.Tablet>40</OnIdiom.Tablet>
+                </OnIdiom>
+            </Grid.ColumnSpacing>
+            <Grid.RowSpacing>
+                <OnIdiom x:TypeArguments="x:Double">
+                    <OnIdiom.Phone>10</OnIdiom.Phone>
+                    <OnIdiom.Tablet>20</OnIdiom.Tablet>
+                </OnIdiom>
+            </Grid.RowSpacing>
+            <Grid.Padding>
+                <OnIdiom x:TypeArguments="Thickness">
+                    <OnIdiom.Phone>10,10,10,0</OnIdiom.Phone>
+                    <OnIdiom.Tablet>20,20,20,0</OnIdiom.Tablet>
+                </OnIdiom>
+            </Grid.Padding>
+            <Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
@@ -58,7 +75,7 @@
 			x:Name="PickerServiceType"
 			Grid.Row="1"
 			Grid.Column="1"
-			SelectedIndex="{Binding ServiceType}">
+			SelectedIndex="{Binding ServiceType, Mode=TwoWay}">
 			 <Picker.Items>
 	            <x:String>Xamarin Platform</x:String> 
 	            <x:String>Xamarin Test Cloud</x:String>
@@ -81,7 +98,7 @@
 		<DatePicker 
 			Grid.Row="2"
 			Grid.Column="1"
-			Date="{Binding Date}"/>
+			Date="{Binding Date, Mode=TwoWay}"/>
 
 		<Label
 			Grid.Row="3"
@@ -95,7 +112,7 @@
 			x:Name="PickerRating"
 			Grid.Row="3" 
 			Grid.Column="1"
-			SelectedIndex="{Binding Rating}">
+			SelectedIndex="{Binding Rating, Mode=TwoWay}">
 			 <Picker.Items>
 	            <x:String>0 - Not so great</x:String>
 	            <x:String>1</x:String> 
@@ -144,7 +161,7 @@
 
 		<Switch 
 			Grid.Row="6"
-			IsToggled="{Binding RequiresCall}"/>
+			IsToggled="{Binding RequiresCall, Mode=TwoWay}"/>
 
 		<Label
 			Grid.Row="6"

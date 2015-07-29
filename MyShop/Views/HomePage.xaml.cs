@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyShop.Views.Tablet;
+using System;
 using System.Collections.Generic;
 
 using Xamarin.Forms;
@@ -12,14 +13,22 @@ namespace MyShop
 			InitializeComponent ();
 			Xamarin.Insights.Track ("Home");
 			BindingContext = new HomeViewModel (this);
-			ButtonFindStore.Clicked += (sender, e) => 
+			ButtonFindStore.Clicked += async (sender, e) => 
 			{
-				Navigation.PushAsync(new StoresPage());
+                //if (Device.Idiom == TargetIdiom.Tablet || Device.Idiom == TargetIdiom.Desktop)
+                  //  await Navigation.PushAsync(new StoresTabletPage());
+                //else
+				    await Navigation.PushAsync(new StoresPage());
 			};
 
-			ButtonLeaveFeedback.Clicked += (sender, e) => 
+            if(Device.Idiom == TargetIdiom.Tablet)
+            {
+                HeroImage.Source = ImageSource.FromFile("herotablet.jpg");
+            }
+
+			ButtonLeaveFeedback.Clicked += async (sender, e) => 
 			{
-				Navigation.PushAsync(new FeedbackPage());
+				await Navigation.PushAsync(new FeedbackPage());
 			};
 		}
 	}

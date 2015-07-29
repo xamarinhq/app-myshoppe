@@ -11,14 +11,14 @@ namespace MyShopAdmin
 		{
 			InitializeComponent ();
 			Title = "Shoppe Admin";
-			ButtonManage.Clicked += (sender, e) => 
+			ButtonManage.Clicked += async (sender, e) => 
 			{
-				Navigation.PushAsync(new StoresPage());
+				await Navigation.PushAsync(new StoresPage());
 			};
 
-			ButtonFeedback.Clicked += (sender, e) => 
+			ButtonFeedback.Clicked += async (sender, e) => 
 			{
-				Navigation.PushAsync(new FeedbackListPage());
+				await Navigation.PushAsync(new FeedbackListPage());
 			};
 		}
 	}
