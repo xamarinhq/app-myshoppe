@@ -44,6 +44,27 @@ My Shoppe leverages the brand new Azure App Service called [Azure Mobile Apps](h
 
 I have provided my existing .NET Backend for reference on how to create your controllers and data entities to publish to Azure. Read through the [Azure Mobile Apps tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-dotnet-backend-xamarin-android-get-started-preview/) to learn how to create and setup your own Mobile Apps backend for My Shoppe. 
 
+#### Creating Controllers
+The Guide above walks you through settings up a default backend with a ToDo List, but we need to customize it a bit more. Ensure that you have the [Azure SDK for .NET installed](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) as you will need this for publishing and also to create the controllers. 
+
+Open the server solution and under **DataObjects** add Feedback.cs and Store.cs from [MyShoppe/MyShopApp_Web/MyShopAppService/DataObjects](https://github.com/jamesmontemagno/MyShoppe/tree/master/MyShopApp_Web/MyShopAppService/DataObjects). Ensure you update your namespaces correctly.
+
+Under Controllers simply right click and **Add -> New Item...** and if you have the Azure tools you will see **New Scaffold Item**. Select this option. 
+
+![](art/NewScaffold.png)
+
+Now Select **New Azure Mobile App Controller**
+
+![](art/NewController.png)
+
+Select your DataObject, DataContext, and finalize the name (I use the default of StoreController and FeedbackController).
+
+![](art/FinalizeController.png)
+
+Do this for both Feedback and Store, and you are all set! You may want to remove all of the ToDo DataObjects and Controllers. 
+
+
+#### Update Client
 Once you have your backend setup you will want to enter your very own Azure Mobile Apps credentials in the [AzureDataStore.cs file on the following lines](https://github.com/jamesmontemagno/MyShoppe/blob/master/MyShop/Services/AzureDataStore.cs#L29-L32):
 
 ```
@@ -53,6 +74,9 @@ MobileService = new MobileServiceClient(
 				"Application Key");
 
 ```
+
+### Add & Manage Stores
+Once you have your Azure Mobile Apps backend setup you can easily add and manage stores with the My Shoppe Admin app for iOS or Android. If you do not add any stores, then no information will show up.
 
 ### [Xamarin Insights](http://www.xamarin.com/insights) Integration
 Xamarin Insights provides a simple and effective way real time monitoring of your mobile apps for crashes and events. My Shoppe integrated Insights for both crash reporting and event tracking. Simply follow the [Xamarin Insights Documentation](https://insights.xamarin.com/docs) to create an API Key for your application. Once you have that simply replace all instances of the demo key: 
@@ -78,8 +102,6 @@ Use your shop's brand colors and theming easily:
 2. String Replace 3498DB with your Primary color in all xaml pages
 
 
-### Add & Manage Stores
-Once you have your Azure Mobile Apps backend setup you can easily add and manage stores with the My Shoppe Admin app.
 
 
 ### Built with Xamarin & Amazing Plugins
