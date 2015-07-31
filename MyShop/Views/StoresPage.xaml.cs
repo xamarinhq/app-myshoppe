@@ -30,7 +30,7 @@ namespace MyShop
                 }
                 else
                 {
-                    ItemSelected?.Invoke(store);
+                    ItemSelected.Invoke(store);
                 }
             };
 
