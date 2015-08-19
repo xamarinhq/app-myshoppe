@@ -82,11 +82,7 @@ namespace MyShop
 		public string PhoneNumber { get; set; }
 		public string LocationCode { get; set; }
 
-        [JsonIgnore]
-        public string SortBy
-        {
-            get { return FeedbackDate.ToString("MMMM yyyy"); }
-        }
+
 	}
 }
 

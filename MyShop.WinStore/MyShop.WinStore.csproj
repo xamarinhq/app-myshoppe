@@ -16,7 +16,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>MyShop.WinStore_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <NuGetPackageImportStamp>58711e80</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>5dba4e76</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -164,12 +164,12 @@
       <HintPath>..\packages\Xam.Plugin.ExternalMaps.1.0.4\lib\win8\ExternalMaps.Plugin.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
-      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.2\lib\win81\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.3\lib\win81\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ImageCircle.Forms.Plugin.WindowsStore">
-      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.2\lib\win81\ImageCircle.Forms.Plugin.WindowsStore.dll</HintPath>
+    <Reference Include="ImageCircle.Forms.Plugin.WindowsStore, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.3\lib\win81\ImageCircle.Forms.Plugin.WindowsStore.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Lotz.Xam.Messaging, Version=2.0.1.0, Culture=neutral, processorArchitecture=MSIL">

@@ -26,7 +26,7 @@
     <ValidateXaml>true</ValidateXaml>
     <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
     <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
-    <NuGetPackageImportStamp>a990843c</NuGetPackageImportStamp>
+    <NuGetPackageImportStamp>c8b1ef19</NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -230,12 +230,12 @@
       <HintPath>..\packages\Xam.Plugin.ExternalMaps.1.0.4\lib\wp8\ExternalMaps.Plugin.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ImageCircle.Forms.Plugin.Abstractions">
-      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.2\lib\wp8\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
+    <Reference Include="ImageCircle.Forms.Plugin.Abstractions, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.3\lib\wp8\ImageCircle.Forms.Plugin.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="ImageCircle.Forms.Plugin.WindowsPhone">
-      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.2\lib\wp8\ImageCircle.Forms.Plugin.WindowsPhone.dll</HintPath>
+    <Reference Include="ImageCircle.Forms.Plugin.WindowsPhone, Version=1.1.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Xam.Plugins.Forms.ImageCircle.1.1.3\lib\wp8\ImageCircle.Forms.Plugin.WindowsPhone.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="JeffWilcox.PhoneThemeManager, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
