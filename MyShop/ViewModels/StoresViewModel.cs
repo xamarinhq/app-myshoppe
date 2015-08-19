@@ -75,7 +75,7 @@ namespace MyShop
 				Sort();
 			}
 			catch(Exception ex) {
-				await page.DisplayAlert ("Uh Oh :(", "Unable to gather stores.", "OK");
+				page.DisplayAlert ("Uh Oh :(", "Unable to gather stores.", "OK");
 				Xamarin.Insights.Report (ex);
 			}
 			finally {
