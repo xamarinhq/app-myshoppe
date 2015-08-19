@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using MyShop;
 using Lotz.Xam.Messaging;
+using MyShop.Helpers;
 
 namespace MyShopAdmin.Views
 {
@@ -17,8 +18,8 @@ namespace MyShopAdmin.Views
 
 			ButtonCall.Clicked += (sender, e) => {
 			var phoneCallTask = MessagingPlugin.PhoneDialer;
-			if (phoneCallTask.CanMakePhoneCall) 
-				phoneCallTask.MakePhoneCall(feedback.PhoneNumber);
+			if (phoneCallTask.CanMakePhoneCall)
+                phoneCallTask.MakePhoneCall(feedback.PhoneNumber.CleanPhone());
 			};
 		}
 	}

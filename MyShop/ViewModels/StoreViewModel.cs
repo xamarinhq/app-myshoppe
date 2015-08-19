@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using ExternalMaps.Plugin;
 using Lotz.Xam.Messaging;
+using MyShop.Helpers;
 
 namespace MyShop
 {
@@ -40,8 +41,8 @@ namespace MyShop
 			get {
 				return callCommand ?? (callCommand = new Command (() => {
 					var phoneCallTask = MessagingPlugin.PhoneDialer;
-					if (phoneCallTask.CanMakePhoneCall) 
-						phoneCallTask.MakePhoneCall(Store.PhoneNumber);
+					if (phoneCallTask.CanMakePhoneCall)
+                        phoneCallTask.MakePhoneCall(Store.PhoneNumber.CleanPhone());
 				}));
 			}
 		}

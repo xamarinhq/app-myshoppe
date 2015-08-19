@@ -65,10 +65,11 @@ namespace MyShopAdmin
 		{
 
 			FeedbacksGrouped.Clear();
-			var sorted = from feedback in Feedbacks
-				orderby feedback.FeedbackDate
-				group feedback by feedback.StoreName into feedbackGroup
-				select new Grouping<string, Feedback>(feedbackGroup.Key, feedbackGroup);
+
+            var sorted = from feedback in Feedbacks
+                         orderby feedback.FeedbackDate descending
+                         group feedback by feedback.SortBy into feedbackGroup
+                         select new Grouping<string, Feedback>(feedbackGroup.Key, feedbackGroup);
 
 			foreach(var sort in sorted)
 				FeedbacksGrouped.Add(sort);

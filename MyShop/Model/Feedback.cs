@@ -51,6 +51,12 @@ namespace MyShop
                     "\n Rating: " + Rating +
                     "\n Text: " + Text;
         }
+
+        [JsonIgnore]
+        public string SortBy
+        {
+            get { return FeedbackDate.ToString("MMMM yyyy"); }
+        }
     }
 }
 

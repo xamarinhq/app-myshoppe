@@ -30,10 +30,18 @@ namespace MyShop
 
 		#endregion
 
+#if DEBUG
+        //always refresh in debug
+        public static bool NeedsSync
+        {
+            get { return true; }
+        }
+#else
 		public static bool NeedsSync
 		{
-			get { return LastSync < DateTime.Now.AddDays (-7); }
+			get { return LastSync < DateTime.Now.AddDays (-3); }
 		}
+#endif
 
 		public static DateTime LastSync {
 			get {
