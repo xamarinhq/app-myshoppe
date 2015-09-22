@@ -27,18 +27,23 @@ namespace MyShop
 			if (IsBusy)
 				return;
 			IsBusy = true;
+            var showAlert = false;
 			try {
 				await dataStore.RemoveStoreAsync(store);
 				Stores.Remove(store);
 				Sort();
 			} catch(Exception ex) {
-				page.DisplayAlert ("Uh Oh :(", "Unable to remove store, please try again", "OK");
+                showAlert = true;
 				Xamarin.Insights.Report (ex);
 			}
 			finally {
 				IsBusy = false;
 				
 			}
+
+            if(showAlert)
+                await page.DisplayAlert("Uh Oh :(", "Unable to remove store, please try again", "OK");
+				
 		}
 
 		private Command getStoresCommand;
@@ -60,6 +65,7 @@ namespace MyShop
 
 			IsBusy = true;
 			GetStoresCommand.ChangeCanExecute ();
+            var showAlert = false;
 			try{
 				Stores.Clear();
 
@@ -75,13 +81,17 @@ namespace MyShop
 				Sort();
 			}
 			catch(Exception ex) {
-				page.DisplayAlert ("Uh Oh :(", "Unable to gather stores.", "OK");
+                showAlert = true;
 				Xamarin.Insights.Report (ex);
 			}
 			finally {
 				IsBusy = false;
 				GetStoresCommand.ChangeCanExecute ();
 			}
+
+            if(showAlert)
+                await page.DisplayAlert("Uh Oh :(", "Unable to gather stores.", "OK");
+				
 
 		}
 

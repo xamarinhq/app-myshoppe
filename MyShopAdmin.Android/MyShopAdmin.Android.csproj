@@ -240,8 +240,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="PluginsHelp\ConnectivityReadme.txt" />
-    <Content Include="PluginsHelp\SettingsReadme.txt" />
+    <None Include="PluginsHelp\ConnectivityReadme.txt" />
+    <None Include="PluginsHelp\SettingsReadme.txt" />
   </ItemGroup>
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

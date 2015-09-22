@@ -37,7 +37,7 @@ namespace MyShopAdmin
 				return;
 
 			IsBusy = true;
-
+            var showAlert = false;
 			try{
 				Feedbacks.Clear();
 
@@ -51,13 +51,15 @@ namespace MyShopAdmin
 				Sort();
 
 			}catch(Exception ex) {
-
+                showAlert = true;
 				Xamarin.Insights.Report (ex);
-				page.DisplayAlert ("Uh oh :(", "Unable to get feedback, pull to refresh when online", "OK");
 			}
 			finally {
 				IsBusy = false;
 			}
+            if(showAlert)
+               await page.DisplayAlert("Uh oh :(", "Unable to get feedback, pull to refresh when online", "OK");
+			
 
 		}
 
@@ -81,19 +83,23 @@ namespace MyShopAdmin
 				return;
 
 			IsBusy = true;
-
+            var showAlert = false;
 			try {
 				await dataStore.RemoveFeedbackAsync(feedback);
 				Feedbacks.Remove(feedback);
 				Sort();
 			} catch(Exception ex) {
-				page.DisplayAlert ("Uh Oh :(", "Unable to delete feedback.", "OK");
-				Xamarin.Insights.Report (ex);
+                showAlert = true;
+                Xamarin.Insights.Report (ex);
 			}
 			finally {
 				IsBusy = false;
 
 			}
+
+            if(showAlert)
+                await page.DisplayAlert("Uh Oh :(", "Unable to delete feedback.", "OK");
+				
 		}
 	}
 }

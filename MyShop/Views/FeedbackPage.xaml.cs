@@ -28,7 +28,7 @@ namespace MyShop
 		protected override async void OnAppearing ()
 		{
 			base.OnAppearing ();
-
+            var showAlert = false;
 			try
 			{
 				var stores = await viewModel.GetStoreAsync();
@@ -36,10 +36,14 @@ namespace MyShop
 					PickerStore.Items.Add(store.Name);
 			}
 			catch(Exception ex) {
-				
-				Xamarin.Insights.Report (ex);
-				DisplayAlert ("Uh oh :(", "Unable to get locations, don't worry you can still submit feedback.", "OK");
+
+                showAlert = true;
+                Xamarin.Insights.Report (ex);
 			}
+            if(showAlert)
+                await DisplayAlert("Uh oh :(", "Unable to get locations, don't worry you can still submit feedback.", "OK");
+			
+
 		}
 	}
 }

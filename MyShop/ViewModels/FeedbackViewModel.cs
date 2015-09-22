@@ -22,19 +22,22 @@ namespace MyShop
 				return new List<Store>();
 
 			IsBusy = true;
-			IEnumerable<Store> stores = null;
+			var showAlert = false;
 			try{
 
 
 				return await dataStore.GetStoresAsync ();
 
 			}catch(Exception ex) {
-				page.DisplayAlert ("Uh Oh :(", "Unable to gather stores.", "OK");
+                showAlert = true;
 				Xamarin.Insights.Report (ex);
 			}
 			finally {
 				IsBusy = false;
 			}
+
+            if(showAlert)
+                await page.DisplayAlert("Uh Oh :(", "Unable to gather stores.", "OK");
 
 			return new List<Store> ();
 
@@ -63,6 +66,7 @@ namespace MyShop
 			Message = "Submitting feedback...";
 			IsBusy = true;
 			saveFeedbackCommand.ChangeCanExecute ();
+            var showAlert = false;
 			try{
 				await dataStore.AddFeedbackAsync(new Feedback
 					{
@@ -77,13 +81,17 @@ namespace MyShop
 						RequiresCall = RequiresCall,
 					});
 			}catch(Exception ex) {
-				page.DisplayAlert ("Uh Oh :(", "Unable to save feedback, please try again.", "OK");
-				Xamarin.Insights.Report (ex);
+                showAlert = true;
+                Xamarin.Insights.Report (ex);
 			}
 			finally {
 				IsBusy = false;
 				saveFeedbackCommand.ChangeCanExecute ();
 			}
+
+            if(showAlert)
+                await page.DisplayAlert("Uh Oh :(", "Unable to save feedback, please try again.", "OK");
+				
 
 			await page.Navigation.PopAsync ();
 

@@ -88,7 +88,7 @@ namespace MyShopAdmin
 
 						if(isAnyPropEmpty || !parse1 || !parse2)
 						{
-							DisplayAlert("Not Valid", "Some fields are not valid, please check", "OK");
+							await DisplayAlert("Not Valid", "Some fields are not valid, please check", "OK");
 							return;
 						}
 						Title = "SAVING...";
@@ -102,7 +102,7 @@ namespace MyShopAdmin
 						}
 
 						await DisplayAlert("Saved", "Please refresh store list", "OK");
-						Navigation.PopAsync();
+						await Navigation.PopAsync();
 					})
 			});
 

@@ -21,27 +21,28 @@ namespace MyShop.Services
         {
             var rootFolder = FileSystem.Current.LocalStorage;
             var json = ResourceLoader.GetEmbeddedResourceString(Assembly.Load(new AssemblyName("MyShop")), "stores.json");
-            return JsonConvert.DeserializeObject<List<Store>>(json);
+            return await Task.Run(() => JsonConvert.DeserializeObject<List<Store>>(json));
         }
 
         public async Task<Feedback> AddFeedbackAsync(Feedback feedback)
         {
             var emailTask = MessagingPlugin.EmailMessenger;
-            if(emailTask.CanSendEmail)
+            if (emailTask.CanSendEmail)
             {
                 emailTask.SendEmail("james.montemagno@xamarin.com", "My Shop Feedback", feedback.ToString());
             }
-            return feedback;
+
+            return await Task.Run(() => { return feedback; });
         }
 
         public async Task<Store> AddStoreAsync(Store store)
         {
-            return store;
+            return await Task.Run(() => { return store; });
         }
 
         public async Task<IEnumerable<Feedback>> GetFeedbackAsync()
         {
-            return new List<Feedback>();
+            return await Task.Run(() => { return new List<Feedback>(); });
         }
 
 
@@ -52,12 +53,12 @@ namespace MyShop.Services
 
         public async Task<bool> RemoveFeedbackAsync(Feedback feedback)
         {
-            return true;
+            return await Task.Run(() => { return true; });
         }
 
         public async Task<bool> RemoveStoreAsync(Store store)
         {
-            return true;
+            return await Task.Run(() => { return true; });
         }
 
         public Task SyncFeedbacksAsync()
@@ -72,7 +73,7 @@ namespace MyShop.Services
 
         public async Task<Store> UpdateStoreAsync(Store store)
         {
-            return store;
+            return await Task.Run(() => { return store; });
         }
     }
 }
