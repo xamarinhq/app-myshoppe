@@ -24,7 +24,7 @@ namespace MyShop
 		public string Title
 		{
 			get { return title; }
-			set { SetProperty (ref title, value, TitlePropertyName);}
+			set { SetProperty (ref title, value);}
 		}
 
 		private string subTitle = string.Empty;
@@ -35,7 +35,7 @@ namespace MyShop
 		public string Subtitle
 		{
 			get { return subTitle; }
-			set { SetProperty (ref subTitle, value, SubtitlePropertyName);}
+			set { SetProperty (ref subTitle, value);}
 		}
 
 		private string icon = null;
@@ -46,7 +46,7 @@ namespace MyShop
 		public string Icon
 		{
 			get { return icon; }
-			set { SetProperty (ref icon, value, IconPropertyName);}
+			set { SetProperty (ref icon, value);}
 		}
 
 		private bool isBusy;
@@ -57,7 +57,7 @@ namespace MyShop
 		public bool IsBusy 
 		{
 			get { return isBusy; }
-			set { SetProperty (ref isBusy, value, IsBusyPropertyName);}
+			set { SetProperty (ref isBusy, value);}
 		}
 
 		private bool canLoadMore = true;
@@ -68,7 +68,7 @@ namespace MyShop
 		public bool CanLoadMore
 		{
 			get { return canLoadMore; }
-			set { SetProperty (ref canLoadMore, value, CanLoadMorePropertyName);}
+			set { SetProperty (ref canLoadMore, value);}
 		}
 
 		protected void SetProperty<T>(
@@ -83,8 +83,7 @@ namespace MyShop
 
 			backingStore = value;
 
-			if (onChanged != null) 
-				onChanged();
+            onChanged?.Invoke();
 
 			OnPropertyChanged(propertyName);
 		}
@@ -93,12 +92,8 @@ namespace MyShop
 		public event PropertyChangedEventHandler PropertyChanged;
 		#endregion
 
-		public void OnPropertyChanged(string propertyName)
-		{
-			if (PropertyChanged == null)
-				return;
-
-			PropertyChanged (this, new PropertyChangedEventArgs (propertyName));
-		}
+		public void OnPropertyChanged(string propertyName) =>
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs (propertyName));
+		
 	}
 }
