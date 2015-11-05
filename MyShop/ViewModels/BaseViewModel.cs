@@ -83,7 +83,7 @@ namespace MyShop
 
 			backingStore = value;
 
-            onChanged?.Invoke();
+            		onChanged?.Invoke();
 
 			OnPropertyChanged(propertyName);
 		}
@@ -92,7 +92,7 @@ namespace MyShop
 		public event PropertyChangedEventHandler PropertyChanged;
 		#endregion
 
-		public void OnPropertyChanged(string propertyName) =>
+		public void OnPropertyChanged([CallerMemberName]string propertyName = "") =>
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs (propertyName));
 		
 	}
