@@ -7,7 +7,6 @@
 	Title="{Binding Title}"
 	IsBusy="{Binding IsBusy}">
     <ContentPage.Content>
-        
         <StackLayout>
 			<StackLayout HorizontalOptions="Center" Orientation="Horizontal" Spacing="10" Padding="10" IsVisible="{Binding IsBusy}">
 				<ActivityIndicator  HorizontalOptions="Center"
@@ -19,6 +18,7 @@
 	   		</StackLayout>
 			<ListView 
 				x:Name="StoreList"
+                SelectedItem="{Binding SelectedStore, Mode=TwoWay}"
 				ItemsSource="{Binding StoresGrouped}"
 				IsGroupingEnabled="True"
             	GroupDisplayBinding="{Binding Key}"

@@ -17,27 +17,11 @@ namespace MyShop
 
 			BindingContext = viewModel = new StoresViewModel (this);
 
-			StoreList.ItemSelected += async (sender, e) => 
-			{
-				if(StoreList.SelectedItem == null)
-					return;
-
-                var store = e.SelectedItem as Store;
-                if (ItemSelected == null)
-                {
-                    await Navigation.PushAsync(new StorePage(store));
-                    StoreList.SelectedItem = null;
-                }
-                else
-                {
-                    ItemSelected.Invoke(store);
-                }
-            };
-
+            viewModel.ItemSelected = ItemSelected;
 			if(Device.OS == TargetPlatform.WinPhone || (Device.OS == TargetPlatform.Windows && Device.Idiom == TargetIdiom.Phone))
 			{
-				StoreList.IsGroupingEnabled = false;
-				StoreList.ItemsSource = viewModel.Stores;
+				//StoreList.IsGroupingEnabled = false;
+				//StoreList.ItemsSource = viewModel.Stores;
 			}
 		}
 

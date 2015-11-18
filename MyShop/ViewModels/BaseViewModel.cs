@@ -90,10 +90,11 @@ namespace MyShop
 
 		#region INotifyPropertyChanged implementation
 		public event PropertyChangedEventHandler PropertyChanged;
-		#endregion
+        #endregion
 
-		public void OnPropertyChanged(string propertyName) =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs (propertyName));
-		
+        public void OnPropertyChanged([CallerMemberName]string propertyName = "") =>
+            PropertyChanged?.Invoke(this,
+                new PropertyChangedEventArgs(propertyName));
+        
 	}
 }
