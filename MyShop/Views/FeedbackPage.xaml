@@ -79,9 +79,9 @@
 			 <Picker.Items>
 	            <x:String>Xamarin Platform</x:String> 
 	            <x:String>Xamarin Test Cloud</x:String>
-              <x:String>Xamarin Insights</x:String>
-              <x:String>Xamarin.Forms</x:String>
-              <x:String>Xamarin Studio</x:String>
+                <x:String>Xamarin Insights</x:String>
+                <x:String>Xamarin.Forms</x:String>
+                <x:String>Xamarin Studio</x:String>
 	            <x:String>Xamarin for Visual Studio</x:String>
 	            <x:String>Other</x:String>
 	        </Picker.Items>
@@ -152,6 +152,7 @@
 			TextColor="#3498DB"
 			VerticalOptions="Center"  />
 
+        
 		<Entry 
 			Grid.Row="5"
 			Grid.Column="1"

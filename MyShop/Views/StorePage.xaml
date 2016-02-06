@@ -230,7 +230,7 @@
 					Image="navigation.png"
 					Text="Navigate"
 					Command="{Binding NavigateCommand}"
-					VerticalOptions="Center"/>
+					VerticalOptions="FillAndExpand"/>
 
 				<maps:Map Grid.Row="14"
 						Grid.ColumnSpan="3" 

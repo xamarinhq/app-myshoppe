@@ -11,7 +11,7 @@ using Xamarin.Forms;
 
 //Comment back in to use azure
 using MyShop;
-using Connectivity.Plugin;
+using Plugin.Connectivity;
 
 [assembly: Dependency(typeof(AzureDataStore))]
 namespace MyShop
