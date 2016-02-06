@@ -14,7 +14,5 @@ namespace MyShop
 		{
 			this.page = page;
 		}
-        
-        
 	}
 }
