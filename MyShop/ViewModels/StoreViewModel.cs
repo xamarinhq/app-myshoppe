@@ -1,12 +1,12 @@
 ﻿using System;
 using Xamarin.Forms;
-using ExternalMaps.Plugin;
-using Lotz.Xam.Messaging;
+using Plugin.ExternalMaps;
+using Plugin.Messaging;
 using MyShop.Helpers;
 
 namespace MyShop
 {
-	public class StoreViewModel : BaseViewModel
+	public class StoreViewModel : ViewModelBase
 	{
 		public Store Store { get; set;}
 		public string Monday{ get { return string.Format("{0} - {1}", Store.MondayOpen, Store.MondayClose); } }

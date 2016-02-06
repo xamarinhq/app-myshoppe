@@ -7,7 +7,7 @@ using static Xamarin.Insights;
 
 namespace MyShop
 {
-    public class FeedbackViewModel : BaseViewModel
+    public class FeedbackViewModel : ViewModelBase
     {
         IDataStore dataStore;
         public FeedbackViewModel(Page page) : base(page)

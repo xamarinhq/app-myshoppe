@@ -1,4 +1,4 @@
-﻿using Lotz.Xam.Messaging;
+﻿using Plugin.Messaging;
 using MyShop.Services;
 using Newtonsoft.Json;
 using PCLStorage;

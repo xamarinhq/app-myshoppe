@@ -3,21 +3,22 @@ using Xamarin.Forms;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Linq;
+using MvvmHelpers;
 
 namespace MyShop
 {
-    public class StoresViewModel : BaseViewModel
+    public class StoresViewModel : ViewModelBase
     {
         readonly IDataStore dataStore;
-        public ObservableCollection<Store> Stores { get; set; }
-        public ObservableCollection<Grouping<string, Store>> StoresGrouped { get; set; }
+        public ObservableRangeCollection<Store> Stores { get; set; }
+        public ObservableRangeCollection<Grouping<string, Store>> StoresGrouped { get; set; }
         public bool ForceSync { get; set; }
         public StoresViewModel(Page page) : base(page)
         {
             Title = "Locations";
             dataStore = DependencyService.Get<IDataStore>();
-            Stores = new ObservableCollection<Store>();
-            StoresGrouped = new ObservableCollection<Grouping<string, Store>>();
+            Stores = new ObservableRangeCollection<Store>();
+            StoresGrouped = new ObservableRangeCollection<Grouping<string, Store>>();
         }
         public Action<Store> ItemSelected { get; set; }
 
@@ -96,13 +97,9 @@ namespace MyShop
                 Stores.Clear();
 
                 var stores = await dataStore.GetStoresAsync();
-                foreach (var store in stores)
-                {
-                    if (string.IsNullOrWhiteSpace(store.Image))
-                        store.Image = "http://refractored.com/images/wc_small.jpg";
 
-                    Stores.Add(store);
-                }
+                Stores.ReplaceRange(stores);
+
 
                 Sort();
             }
@@ -132,8 +129,7 @@ namespace MyShop
                          group store by store.Country into storeGroup
                          select new Grouping<string, Store>(storeGroup.Key, storeGroup);
 
-            foreach (var sort in sorted)
-                StoresGrouped.Add(sort);
+            StoresGrouped.ReplaceRange(sorted);
         }
     }
 
