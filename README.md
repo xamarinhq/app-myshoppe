@@ -4,6 +4,8 @@ My Shoppe is a cross-platform Xamarin.Forms pre-built application & template ena
 
 This another Open Source Project by [@JamesMontemagno](http://www.twitter.com/jamesmontemagno)
 
+Built with C# 6 features, you must be running VS 2015 or Xamarin Studio to compile. 
+
 ![](art/myshoppepromo.png)
 
 ## Consumer Application
