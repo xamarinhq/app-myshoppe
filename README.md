@@ -44,7 +44,7 @@ My Shoppe leverages the brand new Azure App Service called [Azure Mobile Apps](h
 
 **If you just want to try out My Shoppe there is a default sample Azure backend in place, however I have removed all ability to add/update/delete stores. You can however leave feedback and moderate it from the admin app for fun. If you want to setup your own Azure Mobile app, simply follow the steps below**
 
-I have provided my existing .NET Backend for reference on how to create your controllers and data entities to publish to Azure. Read through the [Azure Mobile Apps tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-dotnet-backend-xamarin-android-get-started-preview/) to learn how to create and setup your own Mobile Apps backend for My Shoppe. 
+I have provided my existing .NET Backend for reference on how to create your controllers and data entities to publish to Azure. Read through the [Azure Mobile Apps tutorial](https://azure.microsoft.com/en-us/documentation/articles/app-service-mobile-xamarin-forms-get-started/) to learn how to create and setup your own Mobile Apps backend for My Shoppe. 
 
 #### Creating Controllers
 The Guide above walks you through settings up a default backend with a ToDo List, but we need to customize it a bit more. Ensure that you have the [Azure SDK for .NET installed](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) as you will need this for publishing and also to create the controllers. 
