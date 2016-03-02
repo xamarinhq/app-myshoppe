@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace MyShopAdmin
 {
-	public class FeedbackListViewModel : BaseViewModel
+    public class FeedbackListViewModel : ViewModelBase
 	{
 
 		readonly IDataStore dataStore;
