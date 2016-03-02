@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using MyShop;
-using Lotz.Xam.Messaging;
+using Plugin.Messaging;
 using MyShop.Helpers;
 
 namespace MyShopAdmin.Views
