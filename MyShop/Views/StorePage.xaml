@@ -33,7 +33,6 @@
 					<ColumnDefinition Width=".4*"/>
 				</Grid.ColumnDefinitions>
 				<controls:CircleImage 
-					x:Name="MainImage"
 					Grid.ColumnSpan="3"
 					HeightRequest="150"
 					WidthRequest="150"

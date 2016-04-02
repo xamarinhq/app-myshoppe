@@ -5,10 +5,11 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using System.Linq;
+using MvvmHelpers;
 
 namespace MyShopAdmin
 {
-	public class FeedbackListViewModel : BaseViewModel
+    public class FeedbackListViewModel : ViewModelBase
 	{
 
 		readonly IDataStore dataStore;

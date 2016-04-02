@@ -24,12 +24,12 @@ namespace MyShop
             IsBusy = true;
             try
             {
-                return await dataStore?.GetStoresAsync() ?? new List<Store>();
+                return await dataStore.GetStoresAsync() ?? new List<Store>();
 
             }
             catch (Exception ex)
             {
-                await page?.DisplayAlert("Uh Oh :(", "Unable to gather stores.", "OK");
+                await page.DisplayAlert("Uh Oh :(", "Unable to gather stores.", "OK");
                 Report(ex);
             }
             finally
@@ -57,7 +57,7 @@ namespace MyShop
 
             if (string.IsNullOrWhiteSpace(Text))
             {
-                await page?.DisplayAlert("Enter Feedback", "Please enter some feedback for our team.", "OK");
+                await page.DisplayAlert("Enter Feedback", "Please enter some feedback for our team.", "OK");
                 return;
             }
             
@@ -72,7 +72,7 @@ namespace MyShop
           
             try
             {
-                await dataStore?.AddFeedbackAsync(new Feedback
+                await dataStore.AddFeedbackAsync(new Feedback
                 {
                     Text = this.Text,
                     FeedbackDate = UtcNow,
@@ -87,7 +87,7 @@ namespace MyShop
             }
             catch (Exception ex)
             {
-                await page?.DisplayAlert("Uh Oh :(", "Unable to save feedback, please try again.", "OK");
+                await page.DisplayAlert("Uh Oh :(", "Unable to save feedback, please try again.", "OK");
                 Report(ex);
             }
             finally
@@ -96,7 +96,7 @@ namespace MyShop
                 saveFeedbackCommand?.ChangeCanExecute();
             }
             
-            await page?.Navigation?.PopAsync();
+            await page.Navigation.PopAsync();
 
         }
 
