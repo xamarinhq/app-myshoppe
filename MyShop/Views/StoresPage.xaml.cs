@@ -8,13 +8,16 @@ namespace MyShop
 	public partial class StoresPage : ContentPage
 	{
         StoresViewModel viewModel;
-        public Action<Store> ItemSelected { get; set; }
+        public Action<Store> ItemSelected
+        {
+            get { return viewModel.ItemSelected; }
+            set { viewModel.ItemSelected = value; }
+        }
         public StoresPage ()
 		{
 			InitializeComponent ();
 			BindingContext = viewModel = new StoresViewModel (this);
-
-            viewModel.ItemSelected = ItemSelected;
+            
 			if(Device.OS == TargetPlatform.WinPhone || (Device.OS == TargetPlatform.Windows && Device.Idiom == TargetIdiom.Phone))
 			{
 				//StoreList.IsGroupingEnabled = false;

@@ -12,7 +12,7 @@ namespace MyShop
 			MainPage = new NavigationPage(new HomePage())
 			{
 				BarTextColor = Color.White,
-                BackgroundColor = Color.FromHex("#2B84D3")
+                BarBackgroundColor = Color.FromHex("#2B84D3")
 			};
 		}
 
