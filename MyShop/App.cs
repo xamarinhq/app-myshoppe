@@ -11,7 +11,8 @@ namespace MyShop
 			// The root page of your application
 			MainPage = new NavigationPage(new HomePage())
 			{
-				BarTextColor = Color.White
+				BarTextColor = Color.White,
+                BackgroundColor = Color.FromHex("#2B84D3")
 			};
 		}
 

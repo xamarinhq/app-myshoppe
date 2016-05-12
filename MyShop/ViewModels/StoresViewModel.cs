@@ -60,7 +60,6 @@ namespace MyShop
             catch (Exception ex)
             {
                 await page.DisplayAlert("Uh Oh :(", $"Unable to remove {store?.Name ?? "Unknown"}, please try again: {ex.Message}", "OK");
-                Xamarin.Insights.Report(ex);
             }
             finally
             {
@@ -106,7 +105,7 @@ namespace MyShop
             catch (Exception ex)
             {
                 showAlert = true;
-                Xamarin.Insights.Report(ex);
+             
             }
             finally
             {

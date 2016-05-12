@@ -24,9 +24,6 @@ namespace MyShopAdmin.Droid
 
 			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init ();
 
-			Xamarin.Insights.Initialize("c3d88c6f124fdabdf8880b65845094bb7bad90ac", this);
-			Xamarin.Insights.ForceDataTransmission = true;
-
 			LoadApplication (new App ());
 			ImageCircleRenderer.Init ();
 

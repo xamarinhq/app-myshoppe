@@ -12,9 +12,6 @@ namespace MyShop
         public StoresPage ()
 		{
 			InitializeComponent ();
-
-			Xamarin.Insights.Track ("Stores");
-
 			BindingContext = viewModel = new StoresViewModel (this);
 
             viewModel.ItemSelected = ItemSelected;

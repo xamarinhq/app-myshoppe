@@ -3,7 +3,6 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using static System.DateTime;
-using static Xamarin.Insights;
 
 namespace MyShop
 {
@@ -30,7 +29,6 @@ namespace MyShop
             catch (Exception ex)
             {
                 await page.DisplayAlert("Uh Oh :(", "Unable to gather stores.", "OK");
-                Report(ex);
             }
             finally
             {
@@ -60,11 +58,6 @@ namespace MyShop
                 await page.DisplayAlert("Enter Feedback", "Please enter some feedback for our team.", "OK");
                 return;
             }
-            
-            Track("Feedback", new Dictionary<string, string>
-            {
-                { nameof(Name), Name }
-            });
 
             Message = "Submitting feedback...";
             IsBusy = true;
@@ -88,7 +81,6 @@ namespace MyShop
             catch (Exception ex)
             {
                 await page.DisplayAlert("Uh Oh :(", "Unable to save feedback, please try again.", "OK");
-                Report(ex);
             }
             finally
             {

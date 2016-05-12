@@ -29,9 +29,7 @@ namespace MyShop
 			// This is a sample read-only azure site for demo
 			// Follow the readme.md in the GitHub repo on how to setup your own.
 			MobileService =  new MobileServiceClient(
-			"https://myshoppedemo2-code.azurewebsites.net",
-			"https://default-web-eastus2da4ee2d042c24c8694b0170b0b122415.azurewebsites.net",
-			"dmRICRMyoFCAwjjxmKvIgiuqFgQXOh63");
+            "http://myshoppe-demo.azurewebsites.net");
 		}
 
 		public async Task Init()
@@ -128,6 +126,7 @@ namespace MyShop
 					return;
 				
 				await storeTable.PullAsync("allStores", storeTable.CreateQuery());
+               
 				Settings.LastSync = DateTime.Now;
 			}
 			catch(Exception ex)

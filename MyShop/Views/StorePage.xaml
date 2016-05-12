@@ -234,7 +234,7 @@
 				<maps:Map Grid.Row="14"
 						Grid.ColumnSpan="3" 
 			            x:Name="MyMap"
-			            IsShowingUser="true"
+			            IsShowingUser="false"
 		        	    MapType="Hybrid"/>
 			</Grid>
 		</ScrollView>

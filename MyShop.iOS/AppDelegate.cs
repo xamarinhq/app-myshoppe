@@ -26,8 +26,6 @@ namespace MyShop.iOS
 			Xamarin.FormsMaps.Init();
 
             
-			Xamarin.Insights.Initialize("c3d88c6f124fdabdf8880b65845094bb7bad90ac");
-			Xamarin.Insights.ForceDataTransmission = true;
 			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 			SQLitePCL.CurrentPlatform.Init();
 			ImageCircleRenderer.Init();

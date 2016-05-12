@@ -12,11 +12,7 @@ namespace MyShop
 		public StorePage (Store store)
 		{
 			InitializeComponent ();
-
-			Xamarin.Insights.Track ("Store", new Dictionary<string, string>
-				{
-					{"name", store.Name}
-				});
+            
 			BindingContext = viewModel = new StoreViewModel (store, this);
 		
 		}

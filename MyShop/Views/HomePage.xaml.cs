@@ -11,7 +11,6 @@ namespace MyShop
 		public HomePage ()
 		{
 			InitializeComponent ();
-			Xamarin.Insights.Track ("Home");
 			BindingContext = new HomeViewModel (this);
 			ButtonFindStore.Clicked += async (sender, e) => 
 			{
