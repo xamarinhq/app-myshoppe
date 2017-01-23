@@ -26,7 +26,6 @@ namespace MyShopAdmin.iOS
 
 
 			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-			SQLitePCL.CurrentPlatform.Init();
 			ImageCircleRenderer.Init();
 
 
