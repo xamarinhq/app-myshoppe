@@ -13,7 +13,7 @@ namespace MyShop.Views.Tablet
         public StoresTabletPage()
         {
             Title = "Stores";
-            
+
             Master = new StoresPage();
 
             Detail = new ContentPage
@@ -32,7 +32,7 @@ namespace MyShop.Views.Tablet
             ((StoresPage)Master).ItemSelected = (store) =>
             {
                 Detail = new StorePage(store);
-                if(Device.OS != TargetPlatform.Windows)
+                if (Device.OS != TargetPlatform.Windows)
                     IsPresented = false;
             };
 

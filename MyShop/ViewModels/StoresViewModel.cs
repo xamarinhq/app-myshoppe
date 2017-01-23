@@ -66,8 +66,22 @@ namespace MyShop
                 IsBusy = false;
             }
 
-           
-               
+
+
+        }
+
+        private Command forceRefreshCommand;
+        public Command ForceRefreshCommand
+        {
+            get
+            {
+                return forceRefreshCommand ??
+                    (forceRefreshCommand = new Command(async () =>
+                    {
+                        ForceSync = true;
+                        await ExecuteGetStoresCommand();
+                    }));
+            }
         }
 
         private Command getStoresCommand;
@@ -105,7 +119,7 @@ namespace MyShop
             catch (Exception ex)
             {
                 showAlert = true;
-             
+
             }
             finally
             {

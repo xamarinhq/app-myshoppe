@@ -1,10 +1,54 @@
-﻿using System;
-
+﻿using MyShop.Services;
+using System;
+using System.Linq;
 using Xamarin.Forms;
 
 namespace MyShop
 {
-	public class App : Application
+    public static class ViewModelLocator
+    {
+
+        static FeedbackViewModel feedbackVM;
+
+        public static FeedbackViewModel FeedbackViewModel
+        => feedbackVM ?? (feedbackVM = new FeedbackViewModel(null));
+
+
+        static StoresViewModel storesViewModel;
+
+        public static StoresViewModel StoresViewModel
+        {
+            get
+            {
+                if (storesViewModel != null)
+                    return storesViewModel;
+                              
+                storesViewModel = new StoresViewModel(null);
+                storesViewModel.GetStoresCommand.Execute(null);
+                return storesViewModel;
+            }
+        }
+
+        static StoreViewModel storeViewModel;
+
+        public static StoreViewModel StoreViewModel
+        { 
+            get
+            {
+                if (storeViewModel != null)
+                    return storeViewModel;
+
+                var offline = new OfflineDataStore();
+                var task = offline.GetStoresAsync();
+                task.Wait();
+                var store = task.Result.First();
+                storeViewModel = new StoreViewModel(store, null);
+                return storeViewModel;
+            }
+        }
+
+    }
+    public class App : Application
 	{
 		public App ()
 		{

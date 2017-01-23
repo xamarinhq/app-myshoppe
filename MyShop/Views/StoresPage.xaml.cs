@@ -5,34 +5,34 @@ using Xamarin.Forms;
 
 namespace MyShop
 {
-	public partial class StoresPage : ContentPage
-	{
+    public partial class StoresPage : ContentPage
+    {
         StoresViewModel viewModel;
         public Action<Store> ItemSelected
         {
             get { return viewModel.ItemSelected; }
             set { viewModel.ItemSelected = value; }
         }
-        public StoresPage ()
-		{
-			InitializeComponent ();
-			BindingContext = viewModel = new StoresViewModel (this);
-            
-			if(Device.OS == TargetPlatform.WinPhone || (Device.OS == TargetPlatform.Windows && Device.Idiom == TargetIdiom.Phone))
-			{
-				//StoreList.IsGroupingEnabled = false;
-				//StoreList.ItemsSource = viewModel.Stores;
-			}
-		}
+        public StoresPage()
+        {
+            InitializeComponent();
+            BindingContext = viewModel = new StoresViewModel(this);
 
-		protected override void OnAppearing ()
-		{
-			base.OnAppearing ();
-			if (viewModel.Stores.Count > 0 || viewModel.IsBusy)
-				return;
+            if (Device.OS == TargetPlatform.WinPhone || (Device.OS == TargetPlatform.Windows && Device.Idiom == TargetIdiom.Phone))
+            {
+                //StoreList.IsGroupingEnabled = false;
+                //StoreList.ItemsSource = viewModel.Stores;
+            }
+        }
 
-			viewModel.GetStoresCommand.Execute (null);
-		}
-	}
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            if (viewModel.Stores.Count > 0 || viewModel.IsBusy)
+                return;
+
+            viewModel.GetStoresCommand.Execute(null);
+        }
+    }
 }
 

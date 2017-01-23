@@ -5,6 +5,8 @@
 	x:Class="MyShop.StorePage"
 	xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
     xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+    xmlns:design="clr-namespace:MyShop;assembly=MyShop"
+    BindingContext="{x:Static design:ViewModelLocator.StoreViewModel}"
     Title="{Binding Store.Name}"
 	IsBusy="{Binding IsBusy}">
 	<ContentPage.Content>

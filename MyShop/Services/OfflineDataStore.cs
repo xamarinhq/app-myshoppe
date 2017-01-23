@@ -3,15 +3,12 @@ using MyShop.Services;
 using Newtonsoft.Json;
 using PCLStorage;
 using Plugin.EmbeddedResource;
-using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-//[assembly: Dependency(typeof(OfflineDataStore))]
+[assembly: Dependency(typeof(OfflineDataStore))]
 namespace MyShop.Services
 {
     public class OfflineDataStore : IDataStore
@@ -19,7 +16,6 @@ namespace MyShop.Services
 
         public async Task<IEnumerable<Store>> GetStoresAsync()
         {
-            var rootFolder = FileSystem.Current.LocalStorage;
             var json = ResourceLoader.GetEmbeddedResourceString(Assembly.Load(new AssemblyName("MyShop")), "stores.json");
             return await Task.Run(() => JsonConvert.DeserializeObject<List<Store>>(json));
         }
@@ -35,9 +31,9 @@ namespace MyShop.Services
             return await Task.Run(() => { return feedback; });
         }
 
-        public async Task<Store> AddStoreAsync(Store store)
+        public Task<Store> AddStoreAsync(Store store)
         {
-            return await Task.Run(() => { return store; });
+            return Task.FromResult(store);
         }
 
         public async Task<IEnumerable<Feedback>> GetFeedbackAsync()
@@ -51,14 +47,14 @@ namespace MyShop.Services
             return Task.Run(() => { });
         }
 
-        public async Task<bool> RemoveFeedbackAsync(Feedback feedback)
+        public Task<bool> RemoveFeedbackAsync(Feedback feedback)
         {
-            return await Task.Run(() => { return true; });
+            return Task.FromResult(true);
         }
 
-        public async Task<bool> RemoveStoreAsync(Store store)
+        public Task<bool> RemoveStoreAsync(Store store)
         {
-            return await Task.Run(() => { return true; });
+            return Task.FromResult(true);
         }
 
         public Task SyncFeedbacksAsync()
@@ -71,9 +67,9 @@ namespace MyShop.Services
             return Task.Run(() => { });
         }
 
-        public async Task<Store> UpdateStoreAsync(Store store)
+        public Task<Store> UpdateStoreAsync(Store store)
         {
-            return await Task.Run(() => { return store; });
+            return Task.FromResult(store);
         }
     }
 }

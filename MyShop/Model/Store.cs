@@ -3,15 +3,15 @@ using Newtonsoft.Json;
 
 namespace MyShop
 {
-	public class Store
-	{
+    public class Store
+    {
 
-		[JsonProperty(PropertyName = "id")]
-		public string Id { get; set; }
+        [JsonProperty(PropertyName = "id")]
+        public string Id { get; set; }
 
 
         [Microsoft.WindowsAzure.MobileServices.Version]
-		public string Version { get; set; } = string.Empty;
+        public string Version { get; set; } = string.Empty;
 
         public string Name { get; set; } = string.Empty;
         public string LocationHint { get; set; } = string.Empty;
@@ -25,12 +25,12 @@ namespace MyShop
 
 
         [JsonIgnore]
-		public Uri ImageUri
-		{
-			get { return new System.Uri(Image); }
-		}
+        public Uri ImageUri
+        {
+            get { return new System.Uri(Image); }
+        }
 
-		public double Latitude { get; set; } = 0;
+        public double Latitude { get; set; } = 0;
         public double Longitude { get; set; } = 0;
 
         public string MondayOpen { get; set; } = string.Empty;

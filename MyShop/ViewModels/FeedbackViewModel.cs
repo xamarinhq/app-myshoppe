@@ -34,7 +34,7 @@ namespace MyShop
             {
                 IsBusy = false;
             }
-                
+
             return new List<Store>();
         }
 
@@ -62,7 +62,7 @@ namespace MyShop
             Message = "Submitting feedback...";
             IsBusy = true;
             saveFeedbackCommand?.ChangeCanExecute();
-          
+
             try
             {
                 await dataStore.AddFeedbackAsync(new Feedback
@@ -87,7 +87,7 @@ namespace MyShop
                 IsBusy = false;
                 saveFeedbackCommand?.ChangeCanExecute();
             }
-            
+
             await page.Navigation.PopAsync();
 
         }
