@@ -116,7 +116,7 @@ Built in C# and powered by ([Xamarin](http://www.xamarin.com)) from inside of Vi
 * [Image Circle Control Plugin for Xamarin.Forms](https://www.nuget.org/packages/Xam.Plugins.Forms.ImageCircle/)
 * [Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/)
 * [Messaging Plugin for Xamarin and Windows](https://www.nuget.org/packages/Xam.Plugins.Messaging/)
-* [Microosft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http/)
+* [Microsoft HTTP Client Libraries](https://www.nuget.org/packages/Microsoft.Net.Http/)
 * [Portable Class Library for SQLite](https://www.nuget.org/packages/SQLitePCL/)
 * [Settings Plugin for Xamarin and Windows](https://www.nuget.org/packages/Xam.Plugins.Settings/)
 * [Windows Azure Mobile Services](https://www.nuget.org/packages/WindowsAzure.MobileServices/2.0.0-beta)
