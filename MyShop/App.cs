@@ -7,6 +7,7 @@ namespace MyShop
 {
     public static class ViewModelLocator
     {
+	static bool UseDesignTime => false;
 
         static FeedbackViewModel feedbackVM;
 
@@ -20,6 +21,9 @@ namespace MyShop
         {
             get
             {
+		    if(!UseDesignTime)
+			    return null;
+		    
                 if (storesViewModel != null)
                     return storesViewModel;
                               
@@ -35,6 +39,10 @@ namespace MyShop
         { 
             get
             {
+		    
+		    if(!UseDesignTime)
+			    return null;
+		    
                 if (storeViewModel != null)
                     return storeViewModel;
 
