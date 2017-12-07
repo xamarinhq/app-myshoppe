@@ -43,7 +43,7 @@ I have provided my existing .NET Backend for reference on how to create your con
 #### Creating Controllers
 The Guide above walks you through settings up a default backend with a ToDo List, but we need to customize it a bit more. Ensure that you have the [Azure SDK for .NET installed](http://azure.microsoft.com/en-us/downloads/archive-net-downloads/) as you will need this for publishing and also to create the controllers. 
 
-Open the server solution and under **DataObjects** add Feedback.cs and Store.cs from [MyShoppe/MyShopApp_Web/MyShopAppService/DataObjects](https://github.com/jamesmontemagno/MyShoppe/tree/master/MyShopApp_Web/MyShopAppService/DataObjects). Ensure you update your namespaces correctly.
+Open the server solution and under **DataObjects** add Feedback.cs and Store.cs from [MyShoppe/MyShopApp_Web/MyShopAppService/DataObjects](https://github.com/jamesmontemagno/MyShoppe/tree/master/Backend/myshoppe_demoService/DataObjects). Ensure you update your namespaces correctly.
 
 Under Controllers simply right click and **Add -> New Item...** and if you have the Azure tools you will see **New Scaffold Item**. Select this option. 
 
