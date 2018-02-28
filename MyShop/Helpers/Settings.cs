@@ -49,11 +49,11 @@ namespace MyShop
         {
             get
             {
-                return AppSettings.GetValueOrDefault<DateTime>(LastSyncKey, LastSyncDefault);
+                return AppSettings.GetValueOrDefault(LastSyncKey, LastSyncDefault);
             }
             set
             {
-                AppSettings.AddOrUpdateValue<DateTime>(LastSyncKey, value);
+                AppSettings.AddOrUpdateValue(LastSyncKey, value);
             }
         }
 
@@ -61,11 +61,11 @@ namespace MyShop
         {
             get
             {
-                return AppSettings.GetValueOrDefault<bool>(NeedSyncFeedbackKey, NeedSyncFeedbackDefault);
+                return AppSettings.GetValueOrDefault(NeedSyncFeedbackKey, NeedSyncFeedbackDefault);
             }
             set
             {
-                AppSettings.AddOrUpdateValue<bool>(NeedSyncFeedbackKey, value);
+                AppSettings.AddOrUpdateValue(NeedSyncFeedbackKey, value);
             }
         }
 

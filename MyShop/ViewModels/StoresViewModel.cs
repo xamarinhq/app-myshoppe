@@ -40,7 +40,7 @@ namespace MyShop
                 }
                 else
                 {
-                    ItemSelected.Invoke(selectedStore);
+                    ItemSelected?.Invoke(selectedStore);
                 }
             }
         }

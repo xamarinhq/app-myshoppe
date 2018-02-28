@@ -1,23 +1,26 @@
 ﻿{
   "dependencies": {
-    "Microsoft.Azure.Mobile.Client": "3.1.0",
-    "Microsoft.Azure.Mobile.Client.SQLiteStore": "3.1.0",
+    "FormsToolkit": "2.0.1",
+    "Microsoft.Azure.Mobile.Client": "4.0.2",
+    "Microsoft.Azure.Mobile.Client.SQLiteStore": "4.0.2",
     "Microsoft.Net.Http": "2.2.29",
-    "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
-    "Newtonsoft.Json": "9.0.1",
+    "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.7",
+    "Newtonsoft.Json": "11.0.1",
     "PCLStorage": "1.0.2",
-    "Refractored.MvvmHelpers": "1.2.2",
-    "Xam.Plugin.Connectivity": "2.3.0",
+    "Refractored.MvvmHelpers": "1.3.0",
+    "SQLitePCLRaw.bundle_green": "1.1.9",
+    "SQLitePCLRaw.core": "1.1.9",
+    "Xam.Plugin.Connectivity": "3.1.1",
     "Xam.Plugin.EmbeddedResource": "1.0.1",
-    "Xam.Plugin.ExternalMaps": "3.0.0",
-    "Xam.Plugins.Forms.ImageCircle": "1.8.1",
-    "Xam.Plugins.Messaging": "3.2.1",
-    "Xam.Plugins.Settings": "2.5.1",
-    "Xamarin.Forms": "2.3.3.180",
-    "Xamarin.Forms.Maps": "2.3.3.180"
+    "Xam.Plugin.ExternalMaps": "4.0.1",
+    "Xam.Plugins.Forms.ImageCircle": "2.0.2",
+    "Xam.Plugins.Messaging": "5.1.0",
+    "Xam.Plugins.Settings": "3.1.1",
+    "Xamarin.Forms": "2.5.0.280555",
+    "Xamarin.Forms.Maps": "2.5.0.280555"
   },
   "frameworks": {
-    "uap10.0": {}
+    "uap10.0.16299": {}
   },
   "runtimes": {
     "win10-arm": {},

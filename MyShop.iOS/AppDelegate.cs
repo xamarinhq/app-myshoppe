@@ -24,7 +24,7 @@ namespace MyShop.iOS
 			global::Xamarin.Forms.Forms.Init ();
 
 			Xamarin.FormsMaps.Init();
-
+            FormsToolkit.iOS.Toolkit.Init();
             
 			Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
 			ImageCircleRenderer.Init();

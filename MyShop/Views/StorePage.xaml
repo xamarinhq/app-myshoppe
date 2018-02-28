@@ -11,7 +11,7 @@
 	IsBusy="{Binding IsBusy}">
 	<ContentPage.Content>
 		<ScrollView>
-			<Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+			<Grid Padding="10" RowSpacing="10" ColumnSpacing="10" x:Name="MainGrid">
 				<Grid.RowDefinitions>
 					<RowDefinition Height="Auto"/>
 					<RowDefinition Height="Auto"/>
@@ -233,11 +233,11 @@
 					Command="{Binding NavigateCommand}"
 					VerticalOptions="FillAndExpand"/>
 
-				<maps:Map Grid.Row="14"
+				<!--<maps:Map Grid.Row="14"
 						Grid.ColumnSpan="3" 
 			            x:Name="MyMap"
 			            IsShowingUser="false"
-		        	    MapType="Hybrid"/>
+		        	    MapType="Hybrid"/>-->
 			</Grid>
 		</ScrollView>
 	</ContentPage.Content>

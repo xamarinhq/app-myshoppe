@@ -22,7 +22,7 @@ namespace MyShop.Services
 
         public async Task<Feedback> AddFeedbackAsync(Feedback feedback)
         {
-            var emailTask = MessagingPlugin.EmailMessenger;
+            var emailTask = CrossMessaging.Current.EmailMessenger;
             if (emailTask.CanSendEmail)
             {
                 emailTask.SendEmail("james.montemagno@xamarin.com", "My Shop Feedback", feedback.ToString());

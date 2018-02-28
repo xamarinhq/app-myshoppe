@@ -43,7 +43,7 @@ namespace MyShop
             {
                 return callCommand ?? (callCommand = new Command(() =>
                 {
-                    var phoneCallTask = MessagingPlugin.PhoneDialer;
+                    var phoneCallTask = CrossMessaging.Current.PhoneDialer;
                     if (phoneCallTask.CanMakePhoneCall)
                         phoneCallTask.MakePhoneCall(Store.PhoneNumber.CleanPhone());
                 }));

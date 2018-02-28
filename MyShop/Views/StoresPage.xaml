@@ -31,11 +31,10 @@
             	HasUnevenRows="true"
                 RefreshCommand="{Binding ForceRefreshCommand}"
                 IsRefreshing="{Binding IsBusy, Mode=TwoWay}"
-                IsPullToRefreshEnabled="True"
-                RowHeight="80">
+                IsPullToRefreshEnabled="True">
                 <ListView.GroupHeaderTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        <ViewCell StyleId="none">
                             <ViewCell.Height>
                                 <OnPlatform x:TypeArguments="x:Double" iOS="28"/>
                             </ViewCell.Height>
@@ -45,7 +44,7 @@
                 </ListView.GroupHeaderTemplate>
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell>
+                        <ViewCell StyleId="disclosure">
                             <Grid>
                                 <Grid.Padding>
                                     <OnPlatform x:TypeArguments="Thickness" iOS="10,5" Android="10,5" WinPhone="20,25"/>

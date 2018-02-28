@@ -17,7 +17,7 @@ namespace MyShopAdmin.Views
 			this.BindingContext = feedback;
 
 			ButtonCall.Clicked += (sender, e) => {
-			var phoneCallTask = MessagingPlugin.PhoneDialer;
+			var phoneCallTask = CrossMessaging.Current.PhoneDialer;
 			if (phoneCallTask.CanMakePhoneCall)
                 phoneCallTask.MakePhoneCall(feedback.PhoneNumber.CleanPhone());
 			};

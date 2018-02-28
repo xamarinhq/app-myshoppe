@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(NuGetPackageRoot)' == ''">
-    <NuGetPackageRoot>$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
   </PropertyGroup>
-  <ImportGroup>
-    <Import Project="$(NuGetPackageRoot)\Microsoft.Bcl.Build\1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('$(NuGetPackageRoot)\Microsoft.Bcl.Build\1.0.21\build\Microsoft.Bcl.Build.targets')" />
-    <Import Project="$(NuGetPackageRoot)\SQLitePCLRaw.lib.e_sqlite3.v140\1.1.2\build\SQLitePCLRaw.lib.e_sqlite3.v140.targets" Condition="Exists('$(NuGetPackageRoot)\SQLitePCLRaw.lib.e_sqlite3.v140\1.1.2\build\SQLitePCLRaw.lib.e_sqlite3.v140.targets')" />
-    <Import Project="$(NuGetPackageRoot)\Xamarin.Forms\2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)\Xamarin.Forms\2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
-    <Import Project="$(NuGetPackageRoot)\Xamarin.Forms.Maps\2.3.3.180\build\win81\Xamarin.Forms.Maps.targets" Condition="Exists('$(NuGetPackageRoot)\Xamarin.Forms.Maps\2.3.3.180\build\win81\Xamarin.Forms.Maps.targets')" />
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)xamarin.forms\2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms\2.5.0.280555\build\netstandard1.0\Xamarin.Forms.targets')" />
+    <Import Project="$(NuGetPackageRoot)xamarin.forms.maps\2.5.0.280555\build\win81\Xamarin.Forms.Maps.targets" Condition="Exists('$(NuGetPackageRoot)xamarin.forms.maps\2.5.0.280555\build\win81\Xamarin.Forms.Maps.targets')" />
+    <Import Project="$(NuGetPackageRoot)netstandard.library\2.0.1\build\netstandard2.0\NETStandard.Library.targets" Condition="Exists('$(NuGetPackageRoot)netstandard.library\2.0.1\build\netstandard2.0\NETStandard.Library.targets')" />
+    <Import Project="$(NuGetPackageRoot)sqlitepclraw.lib.e_sqlite3.v140\1.1.9\build\SQLitePCLRaw.lib.e_sqlite3.v140.targets" Condition="Exists('$(NuGetPackageRoot)sqlitepclraw.lib.e_sqlite3.v140\1.1.9\build\SQLitePCLRaw.lib.e_sqlite3.v140.targets')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x86.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x86.Microsoft.Net.UWPCoreRuntimeSdk.targets')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x64.Microsoft.Net.UWPCoreRuntimeSdk.targets" Condition="Exists('$(NuGetPackageRoot)runtime.win10-x64.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-x64.Microsoft.Net.UWPCoreRuntimeSdk.targets')" />
+    <Import Project="$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.targets" Condition="Exists('$(NuGetPackageRoot)runtime.win10-arm.microsoft.net.uwpcoreruntimesdk\2.1.2\build\runtime.win10-arm.Microsoft.Net.UWPCoreRuntimeSdk.targets')" />
+    <Import Project="C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\2.0.0\build\Microsoft.Net.Native.SharedLibrary-x86.targets" Condition="Exists('C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x86\2.0.0\build\Microsoft.Net.Native.SharedLibrary-x86.targets')" />
+    <Import Project="C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\2.0.0\build\Microsoft.Net.Native.SharedLibrary-x64.targets" Condition="Exists('C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\2.0.0\build\Microsoft.Net.Native.SharedLibrary-x64.targets')" />
+    <Import Project="C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\2.0.0\build\Microsoft.Net.Native.SharedLibrary-arm.targets" Condition="Exists('C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-arm\2.0.0\build\Microsoft.Net.Native.SharedLibrary-arm.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.native.compiler\2.0.3\build\Microsoft.Net.Native.Compiler.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.native.compiler\2.0.3\build\Microsoft.Net.Native.Compiler.targets')" />
   </ImportGroup>
 </Project>

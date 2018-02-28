@@ -18,7 +18,7 @@ namespace MyShop
             InitializeComponent();
             BindingContext = viewModel = new StoresViewModel(this);
 
-            if (Device.OS == TargetPlatform.WinPhone || (Device.OS == TargetPlatform.Windows && Device.Idiom == TargetIdiom.Phone))
+            if (Device.RuntimePlatform == Device.WinPhone || (Device.RuntimePlatform == Device.UWP && Device.Idiom == TargetIdiom.Phone))
             {
                 //StoreList.IsGroupingEnabled = false;
                 //StoreList.ItemsSource = viewModel.Stores;
