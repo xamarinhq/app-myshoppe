@@ -14396,12 +14396,12 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\GitHub\\MyShoppe\\MyShop.UWP\\MyShop.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
       "projectName": "MyShop.UWP",
-      "projectPath": "C:\\GitHub\\MyShoppe\\MyShop.UWP\\MyShop.UWP.csproj",
-      "projectJsonPath": "C:\\GitHub\\MyShoppe\\MyShop.UWP\\project.json",
+      "projectPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\project.json",
       "packagesPath": "C:\\Users\\jamont\\.nuget\\packages\\",
-      "outputPath": "C:\\GitHub\\MyShoppe\\MyShop.UWP\\obj\\",
+      "outputPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\obj\\",
       "projectStyle": "ProjectJson",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
@@ -14413,13 +14413,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nugets.blob.core.windows.net/live-reload/index.json": {},
+        "https://www.myget.org/F/xamarin-caboodle/api/v3/index.json": {}
       },
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\GitHub\\MyShoppe\\MyShop\\MyShop.csproj": {
-              "projectPath": "C:\\GitHub\\MyShoppe\\MyShop\\MyShop.csproj"
+            "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop\\MyShop.csproj": {
+              "projectPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop\\MyShop.csproj"
             }
           }
         }
