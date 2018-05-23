@@ -2,16 +2,13 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using Microsoft.WindowsAzure.MobileServices;
-using System.Linq;
 using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
 using Microsoft.WindowsAzure.MobileServices.Sync;
 using System.Diagnostics;
 using System;
-using Xamarin.Forms;
 
 //Comment back in to use azure
-using MyShop;
-using Plugin.Connectivity;
+using Xamarin.Essentials;
 
 //[assembly: Dependency(typeof(AzureDataStore))]
 namespace MyShop
@@ -119,8 +116,8 @@ namespace MyShop
         public async Task SyncStoresAsync()
         {
             try
-            {
-                if (!CrossConnectivity.Current.IsConnected || !Settings.NeedsSync)
+            {   
+                if (!IsInternetAvailable || !Settings.NeedsSync)
                     return;
 
                 await storeTable.PullAsync("allStores", storeTable.CreateQuery());
@@ -138,9 +135,8 @@ namespace MyShop
             try
             {
                 Settings.NeedSyncFeedback = true;
-                if (!CrossConnectivity.Current.IsConnected)
+                if (!IsInternetAvailable)
                     return;
-
 
                 await MobileService.SyncContext.PushAsync();
                 Settings.NeedSyncFeedback = false;
@@ -150,6 +146,8 @@ namespace MyShop
                 Debug.WriteLine("Sync Failed:" + ex.Message);
             }
         }
+
+        bool IsInternetAvailable => Connectivity.NetworkAccess == NetworkAccess.Internet;
 
         static readonly AzureDataStore instance = new AzureDataStore();
         /// <summary>
