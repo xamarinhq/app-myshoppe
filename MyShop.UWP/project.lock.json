@@ -768,17 +768,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -814,31 +803,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -1955,17 +1919,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -2001,31 +1954,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -3198,17 +3126,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -3244,31 +3161,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -4385,17 +4277,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -4431,31 +4312,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -5628,17 +5484,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -5674,31 +5519,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -6815,17 +6635,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -6861,31 +6670,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -8058,17 +7842,6 @@
           "lib/win8/_._": {}
         }
       },
-      "Xam.Plugin.Connectivity/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Connectivity.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Connectivity.dll": {}
-        }
-      },
       "Xam.Plugin.EmbeddedResource/1.0.1": {
         "type": "package",
         "dependencies": {
@@ -8104,31 +7877,6 @@
         "runtime": {
           "lib/UAP10/ImageCircle.Forms.Plugin.Abstractions.dll": {},
           "lib/UAP10/ImageCircle.Forms.Plugin.UWP.dll": {}
-        }
-      },
-      "Xam.Plugins.Messaging/5.1.0": {
-        "type": "package",
-        "dependencies": {
-          "NETStandard.Library": "1.6.1"
-        },
-        "compile": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Messaging.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Messaging.dll": {}
-        }
-      },
-      "Xam.Plugins.Settings/3.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
-        },
-        "runtime": {
-          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
-          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
       "Xamarin.Essentials/0.6.0-preview": {
@@ -13932,72 +13680,6 @@
         "system.threading.tasks.nuspec"
       ]
     },
-    "Xam.Plugin.Connectivity/3.1.1": {
-      "sha512": "X92JJFbVT8TRVaikzqjonP766jU1xeP6UgvDwu+aWA6Ll00Zjz0S/WevmzzxuPREbsYt//DdLWocy3lbbaJHPA==",
-      "type": "package",
-      "path": "xam.plugin.connectivity/3.1.1",
-      "files": [
-        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.Connectivity.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.Connectivity.dll",
-        "lib/MonoAndroid10/Plugin.Connectivity.dll.mdb",
-        "lib/MonoAndroid10/Plugin.Connectivity.pdb",
-        "lib/MonoAndroid10/Plugin.Connectivity.xml",
-        "lib/UAP10/Plugin.Connectivity.Abstractions.dll",
-        "lib/UAP10/Plugin.Connectivity.Abstractions.pdb",
-        "lib/UAP10/Plugin.Connectivity.Abstractions.xml",
-        "lib/UAP10/Plugin.Connectivity.XML",
-        "lib/UAP10/Plugin.Connectivity.dll",
-        "lib/UAP10/Plugin.Connectivity.pdb",
-        "lib/UAP10/Plugin.Connectivity.pri",
-        "lib/UAP10/Plugin.Connectivity/Properties/Plugin.Connectivity.rd.xml",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.dll",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.pdb",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.Abstractions.xml",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.dll",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.pdb",
-        "lib/Xamarin.Mac20/Plugin.Connectivity.xml",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.dll",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.pdb",
-        "lib/Xamarin.iOS10/Plugin.Connectivity.xml",
-        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.dll",
-        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.pdb",
-        "lib/XamarinTVOS/Plugin.Connectivity.Abstractions.xml",
-        "lib/XamarinTVOS/Plugin.Connectivity.dll",
-        "lib/XamarinTVOS/Plugin.Connectivity.pdb",
-        "lib/XamarinTVOS/Plugin.Connectivity.xml",
-        "lib/net45/Plugin.Connectivity.Abstractions.dll",
-        "lib/net45/Plugin.Connectivity.Abstractions.pdb",
-        "lib/net45/Plugin.Connectivity.Abstractions.xml",
-        "lib/net45/Plugin.Connectivity.XML",
-        "lib/net45/Plugin.Connectivity.dll",
-        "lib/net45/Plugin.Connectivity.pdb",
-        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.dll",
-        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.pdb",
-        "lib/netcoreapp2.0/Plugin.Connectivity.Abstractions.xml",
-        "lib/netcoreapp2.0/Plugin.Connectivity.deps.json",
-        "lib/netcoreapp2.0/Plugin.Connectivity.dll",
-        "lib/netcoreapp2.0/Plugin.Connectivity.xml",
-        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.Connectivity.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.Connectivity.deps.json",
-        "lib/netstandard1.0/Plugin.Connectivity.dll",
-        "lib/netstandard1.0/Plugin.Connectivity.pdb",
-        "lib/netstandard1.0/Plugin.Connectivity.xml",
-        "lib/tizen40/Plugin.Connectivity.Abstractions.dll",
-        "lib/tizen40/Plugin.Connectivity.Abstractions.pdb",
-        "lib/tizen40/Plugin.Connectivity.Abstractions.xml",
-        "lib/tizen40/Plugin.Connectivity.deps.json",
-        "lib/tizen40/Plugin.Connectivity.dll",
-        "xam.plugin.connectivity.3.1.1.nupkg.sha512",
-        "xam.plugin.connectivity.nuspec"
-      ]
-    },
     "Xam.Plugin.EmbeddedResource/1.0.1": {
       "sha512": "Blr46PR0T5Lb14Oxm9js1XVfUk2wkWFC8sHvNE1l4XnotLAojuIfAojDD7hy5SSf0vrkmq9uQIabNe+p4S/q3g==",
       "type": "package",
@@ -14077,109 +13759,6 @@
         "lib/netstandard1.0/ImageCircle.Forms.Plugin.Abstractions.xml",
         "xam.plugins.forms.imagecircle.2.0.2.nupkg.sha512",
         "xam.plugins.forms.imagecircle.nuspec"
-      ]
-    },
-    "Xam.Plugins.Messaging/5.1.0": {
-      "sha512": "96BnnhxDEgLOkMSCg/SYIVzYMouyceU+Kdsr83smRXRqQDPHqQm8rOkYq5FWl3yFkBKs3O+HbVZc/TJIyDWAoA==",
-      "type": "package",
-      "path": "xam.plugins.messaging/5.1.0",
-      "files": [
-        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.Messaging.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.Messaging.dll",
-        "lib/MonoAndroid10/Plugin.Messaging.dll.mdb",
-        "lib/MonoAndroid10/Plugin.Messaging.pdb",
-        "lib/MonoAndroid10/Plugin.Messaging.xml",
-        "lib/UAP10/Plugin.Messaging.Abstractions.dll",
-        "lib/UAP10/Plugin.Messaging.Abstractions.pdb",
-        "lib/UAP10/Plugin.Messaging.Abstractions.xml",
-        "lib/UAP10/Plugin.Messaging.dll",
-        "lib/UAP10/Plugin.Messaging.pdb",
-        "lib/UAP10/Plugin.Messaging.pri",
-        "lib/UAP10/Plugin.Messaging.xml",
-        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.Messaging.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.Messaging.dll",
-        "lib/Xamarin.iOS10/Plugin.Messaging.xml",
-        "lib/netstandard1.0/Plugin.Messaging.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.Messaging.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.Messaging.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.Messaging.deps.json",
-        "lib/netstandard1.0/Plugin.Messaging.dll",
-        "lib/netstandard1.0/Plugin.Messaging.pdb",
-        "lib/netstandard1.0/Plugin.Messaging.xml",
-        "xam.plugins.messaging.5.1.0.nupkg.sha512",
-        "xam.plugins.messaging.nuspec"
-      ]
-    },
-    "Xam.Plugins.Settings/3.1.1": {
-      "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
-      "type": "package",
-      "path": "xam.plugins.settings/3.1.1",
-      "files": [
-        "content/MonoAndroid10/Helpers/Settings.cs.pp",
-        "content/UAP10/Helpers/Settings.cs.pp",
-        "content/Xamarin.Mac20/Helpers/Settings.cs.pp",
-        "content/Xamarin.iOS10/Helpers/Settings.cs.pp",
-        "content/net45/Helpers/Settings.cs.pp",
-        "content/netstandard1.0/Helpers/Settings.cs.pp",
-        "content/xamarintvOS/Helpers/Settings.cs.pp",
-        "content/xamarinwatchOS/Helpers/Settings.cs.pp",
-        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
-        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll.mdb",
-        "lib/MonoAndroid10/Plugin.Settings.Abstractions.pdb",
-        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
-        "lib/MonoAndroid10/Plugin.Settings.dll",
-        "lib/MonoAndroid10/Plugin.Settings.dll.mdb",
-        "lib/MonoAndroid10/Plugin.Settings.pdb",
-        "lib/MonoAndroid10/Plugin.Settings.xml",
-        "lib/UAP10/Plugin.Settings.Abstractions.dll",
-        "lib/UAP10/Plugin.Settings.Abstractions.pdb",
-        "lib/UAP10/Plugin.Settings.Abstractions.xml",
-        "lib/UAP10/Plugin.Settings.XML",
-        "lib/UAP10/Plugin.Settings.dll",
-        "lib/UAP10/Plugin.Settings.pdb",
-        "lib/UAP10/Plugin.Settings.pri",
-        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.dll",
-        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.pdb",
-        "lib/Xamarin.Mac20/Plugin.Settings.Abstractions.xml",
-        "lib/Xamarin.Mac20/Plugin.Settings.XML",
-        "lib/Xamarin.Mac20/Plugin.Settings.dll",
-        "lib/Xamarin.Mac20/Plugin.Settings.pdb",
-        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
-        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.pdb",
-        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
-        "lib/Xamarin.iOS10/Plugin.Settings.dll",
-        "lib/Xamarin.iOS10/Plugin.Settings.xml",
-        "lib/net45/Plugin.Settings.Abstractions.dll",
-        "lib/net45/Plugin.Settings.Abstractions.pdb",
-        "lib/net45/Plugin.Settings.Abstractions.xml",
-        "lib/net45/Plugin.Settings.XML",
-        "lib/net45/Plugin.Settings.dll",
-        "lib/net45/Plugin.Settings.pdb",
-        "lib/netstandard1.0/Plugin.Settings.Abstractions.dll",
-        "lib/netstandard1.0/Plugin.Settings.Abstractions.pdb",
-        "lib/netstandard1.0/Plugin.Settings.Abstractions.xml",
-        "lib/netstandard1.0/Plugin.Settings.deps.json",
-        "lib/netstandard1.0/Plugin.Settings.dll",
-        "lib/netstandard1.0/Plugin.Settings.xml",
-        "lib/xamarintvOS/Plugin.Settings.Abstractions.dll",
-        "lib/xamarintvOS/Plugin.Settings.Abstractions.pdb",
-        "lib/xamarintvOS/Plugin.Settings.Abstractions.xml",
-        "lib/xamarintvOS/Plugin.Settings.dll",
-        "lib/xamarintvOS/Plugin.Settings.pdb",
-        "lib/xamarintvOS/Plugin.Settings.xml",
-        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.dll",
-        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.pdb",
-        "lib/xamarinwatchOS/Plugin.Settings.Abstractions.xml",
-        "lib/xamarinwatchOS/Plugin.Settings.dll",
-        "lib/xamarinwatchOS/Plugin.Settings.pdb",
-        "lib/xamarinwatchOS/Plugin.Settings.xml",
-        "readme.txt",
-        "xam.plugins.settings.3.1.1.nupkg.sha512",
-        "xam.plugins.settings.nuspec"
       ]
     },
     "Xamarin.Essentials/0.6.0-preview": {
@@ -14469,12 +14048,9 @@
       "Refractored.MvvmHelpers >= 1.3.0",
       "SQLitePCLRaw.bundle_green >= 1.1.9",
       "SQLitePCLRaw.core >= 1.1.9",
-      "Xam.Plugin.Connectivity >= 3.1.1",
       "Xam.Plugin.EmbeddedResource >= 1.0.1",
       "Xam.Plugin.ExternalMaps >= 4.0.1",
       "Xam.Plugins.Forms.ImageCircle >= 2.0.2",
-      "Xam.Plugins.Messaging >= 5.1.0",
-      "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.Essentials >= 0.6.0-preview",
       "Xamarin.Forms >= 2.5.0.280555",
       "Xamarin.Forms.Maps >= 2.5.0.280555"
@@ -14485,6 +14061,7 @@
     "C:\\Users\\pvc\\.nuget\\packages\\": {}
   },
   "project": {
+    "version": "1.0.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
       "projectName": "MyShop.UWP",
@@ -14524,12 +14101,9 @@
       "Refractored.MvvmHelpers": "[1.3.0, )",
       "SQLitePCLRaw.bundle_green": "[1.1.9, )",
       "SQLitePCLRaw.core": "[1.1.9, )",
-      "Xam.Plugin.Connectivity": "[3.1.1, )",
       "Xam.Plugin.EmbeddedResource": "[1.0.1, )",
       "Xam.Plugin.ExternalMaps": "[4.0.1, )",
       "Xam.Plugins.Forms.ImageCircle": "[2.0.2, )",
-      "Xam.Plugins.Messaging": "[5.1.0, )",
-      "Xam.Plugins.Settings": "[3.1.1, )",
       "Xamarin.Essentials": "[0.6.0-preview, )",
       "Xamarin.Forms": "[2.5.0.280555, )",
       "Xamarin.Forms.Maps": "[2.5.0.280555, )"
