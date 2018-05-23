@@ -841,6 +841,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -894,8 +906,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -2018,6 +2029,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -2071,8 +2094,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -3251,6 +3273,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -3304,8 +3338,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -4428,6 +4461,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -4481,8 +4526,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -5661,6 +5705,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -5714,8 +5770,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -6838,6 +6893,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -6891,8 +6958,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -8071,6 +8137,18 @@
           "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
+      "Xamarin.Essentials/0.6.0-preview": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.UniversalWindowsPlatform": "6.0.6"
+        },
+        "compile": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0.16299/Xamarin.Essentials.dll": {}
+        }
+      },
       "Xamarin.Forms/2.5.0.280555": {
         "type": "package",
         "compile": {
@@ -8124,8 +8202,7 @@
           "Xam.Plugin.EmbeddedResource": "1.0.1",
           "Xam.Plugin.ExternalMaps": "4.0.1",
           "Xam.Plugins.Forms.ImageCircle": "2.0.2",
-          "Xam.Plugins.Messaging": "5.1.0",
-          "Xam.Plugins.Settings": "3.1.1",
+          "Xamarin.Essentials": "0.6.0-preview",
           "Xamarin.Forms": "2.5.0.280555",
           "Xamarin.Forms.Maps": "2.5.0.280555"
         }
@@ -14112,6 +14189,26 @@
         "xam.plugins.settings.nuspec"
       ]
     },
+    "Xamarin.Essentials/0.6.0-preview": {
+      "sha512": "6gJ+eOm4VMcSrBuFPEY2ovr34BS8SRabOh6ynhmEMozep16XXxKskyR9UoGqIp27CqlH+BmZxYLfOAB4B2z85w==",
+      "type": "package",
+      "path": "xamarin.essentials/0.6.0-preview",
+      "files": [
+        "lib/monoandroid71/Xamarin.Essentials.dll",
+        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "lib/netstandard1.0/Xamarin.Essentials.dll",
+        "lib/netstandard1.0/Xamarin.Essentials.xml",
+        "lib/netstandard2.0/Xamarin.Essentials.dll",
+        "lib/netstandard2.0/Xamarin.Essentials.xml",
+        "lib/uap10.0.16299/Xamarin.Essentials.dll",
+        "lib/uap10.0.16299/Xamarin.Essentials.pri",
+        "lib/uap10.0.16299/Xamarin.Essentials.xml",
+        "lib/xamarinios10/Xamarin.Essentials.dll",
+        "lib/xamarinios10/Xamarin.Essentials.xml",
+        "xamarin.essentials.0.6.0-preview.nupkg.sha512",
+        "xamarin.essentials.nuspec"
+      ]
+    },
     "Xamarin.Forms/2.5.0.280555": {
       "sha512": "JVmozDJQNKEVhN4NG5EiG2IBua0+xK9b+t1L/VUN9HeIXkc8BubZM6UnnE1CftlGt0U2+JGTQSL79uxpx0KCpQ==",
       "type": "package",
@@ -14385,43 +14482,39 @@
       "Xam.Plugins.Forms.ImageCircle >= 2.0.2",
       "Xam.Plugins.Messaging >= 5.1.0",
       "Xam.Plugins.Settings >= 3.1.1",
+      "Xamarin.Essentials >= 0.6.0-preview",
       "Xamarin.Forms >= 2.5.0.280555",
       "Xamarin.Forms.Maps >= 2.5.0.280555"
     ],
     "UAP,Version=v10.0.16299": []
   },
   "packageFolders": {
-    "C:\\Users\\jamont\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {}
+    "C:\\Users\\pvc\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
       "projectName": "MyShop.UWP",
-      "projectPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\project.json",
-      "packagesPath": "C:\\Users\\jamont\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop.UWP\\obj\\",
+      "projectPath": "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop.UWP\\MyShop.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop.UWP\\project.json",
+      "packagesPath": "C:\\Users\\pvc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop.UWP\\obj\\",
       "projectStyle": "ProjectJson",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\jamont\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
+        "C:\\Users\\pvc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
         "https://nugets.blob.core.windows.net/live-reload/index.json": {},
-        "https://www.myget.org/F/xamarin-caboodle/api/v3/index.json": {}
+        "https://www.myget.org/F/xamarinforms-ci/api/v2": {}
       },
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop\\MyShop.csproj": {
-              "projectPath": "C:\\Users\\jamont\\source\\repos\\app-myshoppe\\MyShop\\MyShop.csproj"
+            "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop\\MyShop.csproj": {
+              "projectPath": "C:\\Users\\pvc\\Source\\Repos\\app-myshoppe\\MyShop\\MyShop.csproj"
             }
           }
         }
@@ -14444,6 +14537,7 @@
       "Xam.Plugins.Forms.ImageCircle": "[2.0.2, )",
       "Xam.Plugins.Messaging": "[5.1.0, )",
       "Xam.Plugins.Settings": "[3.1.1, )",
+      "Xamarin.Essentials": "[0.6.0-preview, )",
       "Xamarin.Forms": "[2.5.0.280555, )",
       "Xamarin.Forms.Maps": "[2.5.0.280555, )"
     },

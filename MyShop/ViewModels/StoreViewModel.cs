@@ -1,8 +1,8 @@
-﻿using System;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Plugin.ExternalMaps;
-using Plugin.Messaging;
 using MyShop.Helpers;
+
+using Xamarin.Essentials;
 
 namespace MyShop
 {
@@ -41,12 +41,10 @@ namespace MyShop
         {
             get
             {
-                return callCommand ?? (callCommand = new Command(() =>
-                {
-                    var phoneCallTask = CrossMessaging.Current.PhoneDialer;
-                    if (phoneCallTask.CanMakePhoneCall)
-                        phoneCallTask.MakePhoneCall(Store.PhoneNumber.CleanPhone());
-                }));
+                return callCommand ?? 
+                    (callCommand = new Command(() =>
+                        PhoneDialer.Open(Store.PhoneNumber.CleanPhone())
+                    ));
             }
         }
 

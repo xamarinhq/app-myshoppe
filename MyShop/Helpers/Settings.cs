@@ -1,7 +1,6 @@
 // Helpers/Settings.cs
-using Plugin.Settings;
-using Plugin.Settings.Abstractions;
 using System;
+using Xamarin.Essentials;
 
 namespace MyShop
 {
@@ -12,14 +11,6 @@ namespace MyShop
     /// </summary>
     public static class Settings
     {
-        private static ISettings AppSettings
-        {
-            get
-            {
-                return CrossSettings.Current;
-            }
-        }
-
         #region Setting Constants
 
         private const string NeedSyncFeedbackKey = "need_sync_feedback";
@@ -44,29 +35,17 @@ namespace MyShop
 			get { return LastSync < DateTime.Now.AddDays (-3); }
 		}
 #endif
-
+        
         public static DateTime LastSync
         {
-            get
-            {
-                return AppSettings.GetValueOrDefault(LastSyncKey, LastSyncDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue(LastSyncKey, value);
-            }
+            get => new DateTime(Preferences.Get(LastSyncKey, LastSyncDefault.ToUniversalTime().Ticks), DateTimeKind.Utc);
+            set => Preferences.Set(LastSyncKey, value.ToUniversalTime().Ticks);
         }
 
         public static bool NeedSyncFeedback
         {
-            get
-            {
-                return AppSettings.GetValueOrDefault(NeedSyncFeedbackKey, NeedSyncFeedbackDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue(NeedSyncFeedbackKey, value);
-            }
+            get => Preferences.Get(NeedSyncFeedbackKey, NeedSyncFeedbackDefault);
+            set => Preferences.Set(NeedSyncFeedbackKey, value);
         }
 
     }

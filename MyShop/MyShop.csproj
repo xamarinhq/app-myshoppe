@@ -23,8 +23,7 @@
     <PackageReference Include="Xam.Plugin.EmbeddedResource" Version="1.0.1.0" />
     <PackageReference Include="Xam.Plugin.ExternalMaps" Version="4.0.1" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="2.0.2" />
-    <PackageReference Include="Xam.Plugins.Messaging" Version="5.1.0" />
-    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="0.6.0-preview" />
     <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
     <PackageReference Include="Xamarin.Forms.Maps" Version="2.5.0.280555" />
   </ItemGroup>

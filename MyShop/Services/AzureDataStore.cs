@@ -46,15 +46,13 @@ namespace MyShop
         }
 
 
-        public async Task<Feedback> AddFeedbackAsync(Feedback feedback)
+        public async Task AddFeedbackAsync(Feedback feedback)
         {
             if (!initialized)
                 await Init();
-
-
+            
             await feedbackTable.InsertAsync(feedback);
             await SyncFeedbacksAsync();
-            return feedback;
         }
 
         public async Task<IEnumerable<Feedback>> GetFeedbackAsync()
