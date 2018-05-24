@@ -1,14 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using MyShop;
-using Plugin.Messaging;
 using MyShop.Helpers;
+
+using Xamarin.Essentials;
 
 namespace MyShopAdmin.Views
 {
-	public partial class FeedbackPage : ContentPage
+    public partial class FeedbackPage : ContentPage
 	{
 		public FeedbackPage (Feedback feedback)
 		{
@@ -17,10 +15,14 @@ namespace MyShopAdmin.Views
 			this.BindingContext = feedback;
 
 			ButtonCall.Clicked += (sender, e) => {
-			var phoneCallTask = CrossMessaging.Current.PhoneDialer;
-			if (phoneCallTask.CanMakePhoneCall)
-                phoneCallTask.MakePhoneCall(feedback.PhoneNumber.CleanPhone());
-			};
+                try {
+                    PhoneDialer.Open(feedback.PhoneNumber.CleanPhone());
+                }
+                catch (FeatureNotSupportedException fne)
+                {
+                    System.Diagnostics.Debug.WriteLine(fne.ToString());
+                }
+            };
 		}
 	}
 }

@@ -11,7 +11,7 @@ namespace MyShop
         Task<Store> AddStoreAsync(Store store);
         Task<bool> RemoveStoreAsync(Store store);
         Task<Store> UpdateStoreAsync(Store store);
-        Task<Feedback> AddFeedbackAsync(Feedback feedback);
+        Task AddFeedbackAsync(Feedback feedback);
         Task<IEnumerable<Feedback>> GetFeedbackAsync();
         Task<bool> RemoveFeedbackAsync(Feedback feedback);
         Task SyncStoresAsync();
